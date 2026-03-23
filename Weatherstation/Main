@@ -4,8 +4,8 @@
 #include <Adafruit_BME280.h>
 
 // WLAN Zugangsdaten
-String wifi_ssid = "DeineSSID";
-String wifi_pass = "DeinPasswort";
+String wifi_ssid = "Schwetlick";
+String wifi_pass = "Ab130971";
 
 // MQTT Server
 const char* mqtt_server = "192.168.2.50";
