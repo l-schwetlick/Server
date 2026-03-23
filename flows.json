@@ -1,0 +1,5199 @@
+[
+    {
+        "id": "f1d0968f9094f9bc",
+        "type": "tab",
+        "label": "Startseite",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5619fa6ad49c0eb3",
+        "type": "tab",
+        "label": "Weatherdata",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6a35590aabebb52a",
+        "type": "tab",
+        "label": "Serverstats",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1e0ec00694890ee8",
+        "type": "tab",
+        "label": "Backup",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d8c0a15bcbb037c5",
+        "type": "tab",
+        "label": "Telebot",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e72485e3de859577",
+        "type": "tab",
+        "label": "Datenbank",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d785ff2f1c5ba31d",
+        "type": "ui-base",
+        "name": "Home Assistent",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control",
+            "ui-template"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "dashboard",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": true
+    },
+    {
+        "id": "452c04f1b22bd591",
+        "type": "ui-theme",
+        "name": "Main-Theme",
+        "colors": {
+            "surface": "#2e2e2e",
+            "primary": "#2e2e2e",
+            "bgPage": "#383838",
+            "groupBg": "#383838",
+            "groupOutline": "#383838"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "67174af5865e07bd",
+        "type": "ui-page",
+        "name": "Server-Daten",
+        "ui": "d785ff2f1c5ba31d",
+        "path": "/Server",
+        "icon": "server",
+        "layout": "grid",
+        "theme": "452c04f1b22bd591",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 3,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "af95162fe0b27f1b",
+        "type": "ui-group",
+        "name": "CPU",
+        "page": "67174af5865e07bd",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "fe37ee40fdfcb2be",
+        "type": "ui-group",
+        "name": "Battery",
+        "page": "67174af5865e07bd",
+        "width": "5",
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "fdc155d89f7934b5",
+        "type": "ui-group",
+        "name": "Disk Space",
+        "page": "67174af5865e07bd",
+        "width": "5",
+        "height": 1,
+        "order": 5,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "337f45ba58998b49",
+        "type": "ui-group",
+        "name": "RAM",
+        "page": "67174af5865e07bd",
+        "width": "5",
+        "height": 1,
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "76243c59e00076bc",
+        "type": "ui-group",
+        "name": "Network",
+        "page": "67174af5865e07bd",
+        "width": "5",
+        "height": 1,
+        "order": 6,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "bd3bbc29ad96c15a",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD.MM.YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "836d6ea722868582",
+        "type": "ui-page",
+        "name": "Startseite",
+        "ui": "d785ff2f1c5ba31d",
+        "path": "/Meldungen",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "452c04f1b22bd591",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": true,
+        "disabled": "false"
+    },
+    {
+        "id": "5ba0535966a67107",
+        "type": "ui-page",
+        "name": "Wetterstation",
+        "ui": "d785ff2f1c5ba31d",
+        "path": "/Wetterstation",
+        "icon": "mdi-weather-partly-cloudy",
+        "layout": "grid",
+        "theme": "452c04f1b22bd591",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "info": "<div style=\"position:absolute; right:12px; top:8px; font-size:18px;\">\r\n  <span ng-bind=\"global.get('wifi') >= 80 ? '📶📶📶📶' :\r\n                 global.get('wifi') >= 60 ? '📶📶📶' :\r\n                 global.get('wifi') >= 40 ? '📶📶' :\r\n                 '❌ Offline'\">\r\n  </span>\r\n</div>"
+    },
+    {
+        "id": "eecab912e86be171",
+        "type": "ui-group",
+        "name": "Wetter ",
+        "page": "5ba0535966a67107",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "67c59e3f62a336b0",
+        "type": "ui-group",
+        "name": "Letzte Meldung",
+        "page": "836d6ea722868582",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "b0f5f8f2b3a04983",
+        "type": "ui-group",
+        "name": "Suche",
+        "page": "5ba0535966a67107",
+        "width": 3,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "88e20bfec82aba03",
+        "type": "ui-group",
+        "name": "Bedienfeld",
+        "page": "836d6ea722868582",
+        "width": "2",
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "f744b3add02065e0",
+        "type": "MySQLdatabase",
+        "name": "server",
+        "host": "192.168.2.50",
+        "port": "3306",
+        "db": "server",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "783599e7fae86e1e",
+        "type": "telegram bot",
+        "botname": "Schweti_Bot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "testenvironment": false,
+        "updatemode": "polling",
+        "pollinterval": 300,
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": 6667,
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbothost": "0.0.0.0",
+        "localbotport": 8443,
+        "publicbotport": 8443,
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "e82080a8cee2e172",
+        "type": "ui-group",
+        "name": "Backup",
+        "page": "67174af5865e07bd",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "f12178a6f1afd501",
+        "type": "link out",
+        "z": "f1d0968f9094f9bc",
+        "name": "global update",
+        "mode": "link",
+        "links": [
+            "5d695ffa6081cc48",
+            "091d7e236ee3bfd5",
+            "276c7fc440b4823c",
+            "99f6f21239c6d207",
+            "ddeb5d33e45325d1",
+            "25abb80c2e014bc4",
+            "fbd9e69ac2e3a596",
+            "3ff1aecb2a5be579",
+            "95d1947ea38c95e1"
+        ],
+        "x": 435,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "4eb29485eb8041cb",
+        "type": "ui-button-group",
+        "z": "f1d0968f9094f9bc",
+        "name": "UI",
+        "group": "88e20bfec82aba03",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "label": "",
+        "className": "",
+        "rounded": true,
+        "useThemeColors": true,
+        "passthru": false,
+        "options": [
+            {
+                "label": "Alles Aktualisieren",
+                "icon": "mdi-refresh",
+                "value": "refresh_all",
+                "valueType": "str",
+                "color": "#009933"
+            },
+            {
+                "label": "Tabelle leeren",
+                "icon": "mdi-delete-sweep",
+                "value": "delete_table",
+                "valueType": "str",
+                "color": "#999999"
+            },
+            {
+                "label": "OneDrive aufrufen",
+                "icon": "mdi-cloud",
+                "value": "open_onedrive",
+                "valueType": "str",
+                "color": "#ff6666"
+            },
+            {
+                "label": "Speicher aufrufen",
+                "icon": "mdi-server",
+                "value": "open_local",
+                "valueType": "str",
+                "color": "#009999"
+            }
+        ],
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 80,
+        "wires": [
+            [
+                "b803379dbacc1c78",
+                "c67a55a3d8b4629b",
+                "ea827126c9fc5326"
+            ]
+        ]
+    },
+    {
+        "id": "b803379dbacc1c78",
+        "type": "switch",
+        "z": "f1d0968f9094f9bc",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "refresh_all",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "delete_table",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "open_onedrive",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "open_local",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 290,
+        "y": 140,
+        "wires": [
+            [
+                "f12178a6f1afd501"
+            ],
+            [
+                "81d087baccb13862"
+            ],
+            [
+                "42c6ffcffc61feb8"
+            ],
+            [
+                "191ec517d6b42728"
+            ]
+        ]
+    },
+    {
+        "id": "260b66aba5c69894",
+        "type": "ui-notification",
+        "z": "f1d0968f9094f9bc",
+        "ui": "d785ff2f1c5ba31d",
+        "position": "top right",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "5",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": false,
+        "dismissText": "Schließen",
+        "allowConfirm": false,
+        "confirmText": "Bestätigen",
+        "raw": true,
+        "className": "",
+        "name": "Global Notification",
+        "x": 870,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c67a55a3d8b4629b",
+        "type": "debug",
+        "z": "f1d0968f9094f9bc",
+        "name": "debug 12",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 300,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "163cb7a4fc28e356",
+        "type": "link in",
+        "z": "f1d0968f9094f9bc",
+        "name": "get Notification",
+        "links": [
+            "431f85e88e9e536d"
+        ],
+        "x": 265,
+        "y": 420,
+        "wires": [
+            [
+                "34dd6715b60b8352",
+                "f03fe25f24a458e9",
+                "f0316bb4e8c5aad2"
+            ]
+        ]
+    },
+    {
+        "id": "d0c41b88cb380fad",
+        "type": "change",
+        "z": "f1d0968f9094f9bc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 190,
+        "y": 460,
+        "wires": [
+            [
+                "34dd6715b60b8352"
+            ]
+        ]
+    },
+    {
+        "id": "2d87e6f5bfae5735",
+        "type": "debug",
+        "z": "f1d0968f9094f9bc",
+        "name": "debug 11",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "9ee359e876d63b4e",
+        "type": "debug",
+        "z": "f1d0968f9094f9bc",
+        "name": "debug 14",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "621d8dedf281fe61",
+        "type": "delay",
+        "z": "f1d0968f9094f9bc",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "6",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "6",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 640,
+        "y": 460,
+        "wires": [
+            [
+                "260b66aba5c69894",
+                "9ee359e876d63b4e",
+                "7f03de25dd5b3b64"
+            ]
+        ]
+    },
+    {
+        "id": "34dd6715b60b8352",
+        "type": "ui-table",
+        "z": "f1d0968f9094f9bc",
+        "group": "67c59e3f62a336b0",
+        "name": "Notification",
+        "label": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": 0,
+        "passthru": false,
+        "autocols": true,
+        "showSearch": false,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "append",
+        "className": "",
+        "x": 390,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f03fe25f24a458e9",
+        "type": "function",
+        "z": "f1d0968f9094f9bc",
+        "name": "Notification Filter",
+        "func": "// Event aus dem Array holen\nlet event = msg.payload[0];\n\n// Nur Warnung oder Kritisch → Popup\nif (event.Zustand !== \"Warnung\" && event.Zustand !== \"Kritisch\") {\n    return null;\n}\n\n// Einfacher String für ui-notification\nmsg.payload =\n    `${event.Icon} ${event.Quelle} – ${event.Typ}\\n` +\n    `${event.Zustand}: ${event.Kommentar}`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 420,
+        "wires": [
+            [
+                "2d87e6f5bfae5735",
+                "621d8dedf281fe61"
+            ]
+        ]
+    },
+    {
+        "id": "42c6ffcffc61feb8",
+        "type": "ui-template",
+        "z": "f1d0968f9094f9bc",
+        "group": "88e20bfec82aba03",
+        "page": "",
+        "ui": "",
+        "name": "Open OneDrive",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<script>\n    (function(scope) {\n        // Wir warten auf eine Nachricht vom Switch-Node\n        scope.$watch('msg', function(msg) {\n            if (msg && msg.payload === 'open_onedrive') {\n                // Öffnet OneDrive in einem neuen Tab\n                window.open('https://1drv.ms/f/c/54f060033ca19c5a/IgD_EQuci1MmTLy015yBOq92AWz28srRaXnke9Jxk7MkuJI?e=OJTccC', '_blank');\n            }\n        });\n    })(this);\n</script>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 500,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "81d087baccb13862",
+        "type": "link out",
+        "z": "f1d0968f9094f9bc",
+        "name": "send reset table",
+        "mode": "link",
+        "links": [
+            "40bc42c35a22c893"
+        ],
+        "x": 435,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "40bc42c35a22c893",
+        "type": "link in",
+        "z": "f1d0968f9094f9bc",
+        "name": "get reset table",
+        "links": [
+            "81d087baccb13862"
+        ],
+        "x": 45,
+        "y": 460,
+        "wires": [
+            [
+                "d0c41b88cb380fad"
+            ]
+        ]
+    },
+    {
+        "id": "ea827126c9fc5326",
+        "type": "change",
+        "z": "f1d0968f9094f9bc",
+        "name": "reset button",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 240,
+        "wires": [
+            [
+                "065c14ed83ef0b23",
+                "c1d09040dd8c8b12"
+            ]
+        ]
+    },
+    {
+        "id": "065c14ed83ef0b23",
+        "type": "debug",
+        "z": "f1d0968f9094f9bc",
+        "name": "debug 18",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "eb5071be518191d3",
+        "type": "link in",
+        "z": "f1d0968f9094f9bc",
+        "name": "get reset button",
+        "links": [
+            "c1d09040dd8c8b12"
+        ],
+        "x": 35,
+        "y": 80,
+        "wires": [
+            [
+                "4eb29485eb8041cb"
+            ]
+        ]
+    },
+    {
+        "id": "c1d09040dd8c8b12",
+        "type": "link out",
+        "z": "f1d0968f9094f9bc",
+        "name": "send reset button",
+        "mode": "link",
+        "links": [
+            "eb5071be518191d3"
+        ],
+        "x": 435,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "191ec517d6b42728",
+        "type": "ui-template",
+        "z": "f1d0968f9094f9bc",
+        "group": "88e20bfec82aba03",
+        "page": "",
+        "ui": "",
+        "name": "Open Local Disk",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<script>\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n            if (msg && msg.payload === 'open_local') {\n                // Korrigierter Aufruf:\n                window.open('http://192.168.2.50:8090', '_blank');\n            }\n        });\n    })(this);\n</script>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 500,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f0316bb4e8c5aad2",
+        "type": "debug",
+        "z": "f1d0968f9094f9bc",
+        "name": "debug 24",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "7f03de25dd5b3b64",
+        "type": "link out",
+        "z": "f1d0968f9094f9bc",
+        "name": "send Global Notification",
+        "mode": "link",
+        "links": [
+            "a3831f3762fdf810"
+        ],
+        "x": 795,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "434d0fde9338b27e",
+        "type": "comment",
+        "z": "f1d0968f9094f9bc",
+        "name": "Bedienfeld",
+        "info": "",
+        "x": 80,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "d7f27754089780f3",
+        "type": "comment",
+        "z": "f1d0968f9094f9bc",
+        "name": "Meldungen erstellen und ausgeben",
+        "info": "",
+        "x": 160,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "4231fa0ef82fdf63",
+        "type": "http request",
+        "z": "5619fa6ad49c0eb3",
+        "name": "get weatherdata",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 500,
+        "y": 220,
+        "wires": [
+            [
+                "c07e6d3bbc6bd863",
+                "3663ac4bfd56ec3a"
+            ]
+        ]
+    },
+    {
+        "id": "c07e6d3bbc6bd863",
+        "type": "function",
+        "z": "5619fa6ad49c0eb3",
+        "name": "edit weatherdata",
+        "func": "let data = msg.payload;\n\n// Falls die Daten noch als Text (String) ankommen, wandeln wir sie in ein Objekt um\nif (typeof data === 'string') {\n    try {\n        data = JSON.parse(data);\n    } catch (e) {\n        node.error(\"Payload ist kein gültiges JSON\");\n        return null;\n    }\n}\n\n// 1. Das Array für deine Tabelle bauen\nmsg.payload = [\n    { Eigenschaft: \"Stadt\", Wert: data.name },\n    { Eigenschaft: \"Wetter\", Wert: data.weather[0].description },\n    { Eigenschaft: \"Temperatur\", Wert: data.main.temp.toFixed(1) + \" °C\" },\n    { Eigenschaft: \"Feuchtigkeit\", Wert: data.main.humidity + \" %\" },\n    { Eigenschaft: \"Luftdruck\", Wert: data.main.pressure + \" hPa\" },\n    { Eigenschaft: \"Wind\", Wert: data.wind.speed + \" m/s\" }\n];\n\n// 2. Einzelwerte für die Gauge und das Icon mitschicken\nmsg.temp = data.main.temp;\nmsg.icon = data.weather[0].icon;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 220,
+        "wires": [
+            [
+                "07e216f4f73b044e",
+                "669dcaa53cd04129",
+                "c1e89a174ffc41dc",
+                "4ba4f3fbdf4ea470",
+                "66eec731e7d41476",
+                "573b5a24ef0ece06"
+            ]
+        ]
+    },
+    {
+        "id": "3663ac4bfd56ec3a",
+        "type": "debug",
+        "z": "5619fa6ad49c0eb3",
+        "name": "debug 8",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "07e216f4f73b044e",
+        "type": "debug",
+        "z": "5619fa6ad49c0eb3",
+        "name": "debug 9",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "90a9ece4af46a693",
+        "type": "inject",
+        "z": "5619fa6ad49c0eb3",
+        "name": "start at beginning",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "49445e77ae11a3fd"
+            ]
+        ]
+    },
+    {
+        "id": "c1e89a174ffc41dc",
+        "type": "ui-table",
+        "z": "5619fa6ad49c0eb3",
+        "group": "eecab912e86be171",
+        "name": "weatherdata",
+        "label": "",
+        "order": 3,
+        "width": "0",
+        "height": 0,
+        "maxrows": 0,
+        "passthru": false,
+        "autocols": true,
+        "showSearch": false,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 910,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "669dcaa53cd04129",
+        "type": "ui-gauge",
+        "z": "5619fa6ad49c0eb3",
+        "name": "temperature",
+        "group": "eecab912e86be171",
+        "order": 1,
+        "value": "temp",
+        "valueType": "msg",
+        "width": "0",
+        "height": "0",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Temperatur",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "°C",
+        "icon": "<img src=\"http://openweathermap.org/img/wn/{{msg.icon}}@2x.png\">",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "-10",
+                "color": "#5cbed6",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "15",
+                "color": "#00ff40",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "25",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "-10",
+        "max": "40",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 910,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6832be2a3103d7aa",
+        "type": "ui-text-input",
+        "z": "5619fa6ad49c0eb3",
+        "group": "b0f5f8f2b3a04983",
+        "name": "search city",
+        "label": "Stadt suche",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 90,
+        "y": 220,
+        "wires": [
+            [
+                "baec23f2051ccaa3"
+            ]
+        ]
+    },
+    {
+        "id": "3f77c64c37fb31b0",
+        "type": "ui-button",
+        "z": "5619fa6ad49c0eb3",
+        "group": "b0f5f8f2b3a04983",
+        "name": "update",
+        "label": "Aktualisieren",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "mdi-refresh",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 110,
+        "y": 260,
+        "wires": [
+            [
+                "baec23f2051ccaa3"
+            ]
+        ]
+    },
+    {
+        "id": "baec23f2051ccaa3",
+        "type": "function",
+        "z": "5619fa6ad49c0eb3",
+        "name": "compare city",
+        "func": "let input = msg.payload.toString().trim();\nlet apiKey = \"01838d2d2ac5823b8503305af76e1390\";\nlet query;\n\nif (/^\\d+$/.test(input)) {\n    query = input + \",de\";\n} else {\n    query = input;\n}\n\nmsg.url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(query)}&appid=${apiKey}&units=metric&lang=de`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 220,
+        "wires": [
+            [
+                "4231fa0ef82fdf63",
+                "9d46d9ca5b3ca9d9"
+            ]
+        ]
+    },
+    {
+        "id": "4ba4f3fbdf4ea470",
+        "type": "change",
+        "z": "5619fa6ad49c0eb3",
+        "name": "set last city",
+        "rules": [
+            {
+                "t": "set",
+                "p": "lastCity",
+                "pt": "global",
+                "to": "payload[0].Wert",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "49445e77ae11a3fd",
+        "type": "function",
+        "z": "5619fa6ad49c0eb3",
+        "name": "new load",
+        "func": "msg.payload = global.get(\"lastCity\") || \"Ibbenbüren\"; // Standardwert, falls noch nichts gespeichert wurde\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 80,
+        "wires": [
+            [
+                "5dea2d7e37a1f657",
+                "44355b25232681f6"
+            ]
+        ]
+    },
+    {
+        "id": "8bebe44c3acb6dc6",
+        "type": "link in",
+        "z": "5619fa6ad49c0eb3",
+        "name": "get last city",
+        "links": [
+            "5dea2d7e37a1f657"
+        ],
+        "x": 145,
+        "y": 300,
+        "wires": [
+            [
+                "baec23f2051ccaa3"
+            ]
+        ]
+    },
+    {
+        "id": "5dea2d7e37a1f657",
+        "type": "link out",
+        "z": "5619fa6ad49c0eb3",
+        "name": "send last city",
+        "mode": "link",
+        "links": [
+            "8bebe44c3acb6dc6"
+        ],
+        "x": 435,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "66eec731e7d41476",
+        "type": "link out",
+        "z": "5619fa6ad49c0eb3",
+        "name": "send weatherdata",
+        "mode": "link",
+        "links": [],
+        "x": 855,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "5d695ffa6081cc48",
+        "type": "link in",
+        "z": "5619fa6ad49c0eb3",
+        "name": "global update",
+        "links": [
+            "f12178a6f1afd501"
+        ],
+        "x": 205,
+        "y": 120,
+        "wires": [
+            [
+                "49445e77ae11a3fd"
+            ]
+        ]
+    },
+    {
+        "id": "44355b25232681f6",
+        "type": "debug",
+        "z": "5619fa6ad49c0eb3",
+        "name": "debug 10",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "573b5a24ef0ece06",
+        "type": "ui-template",
+        "z": "5619fa6ad49c0eb3",
+        "group": "eecab912e86be171",
+        "page": "",
+        "ui": "",
+        "name": "notification",
+        "order": 2,
+        "width": "0",
+        "height": 0,
+        "head": "",
+        "format": "<div style=\"display: flex; flex-direction: column; align-items: center; justify-content: center;\">\n    <img v-if=\"msg.icon\" \n         :src=\"'https://openweathermap.org/img/wn/' + msg.icon + '@2x.png'\" \n         style=\"width: 80px; height: 80px; filter: drop-shadow(0px 0px 5px rgba(255,255,255,0.5));\">\n</div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 910,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9d46d9ca5b3ca9d9",
+        "type": "debug",
+        "z": "5619fa6ad49c0eb3",
+        "name": "debug 17",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "52e832c085429ba5",
+        "type": "comment",
+        "z": "5619fa6ad49c0eb3",
+        "name": "Beibehalten der Stadt",
+        "info": "",
+        "x": 120,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "b2955592a907a362",
+        "type": "comment",
+        "z": "5619fa6ad49c0eb3",
+        "name": "Abrufen des aktuellen Wetters",
+        "info": "",
+        "x": 140,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "d491260d1ef8d4b3",
+        "type": "exec",
+        "z": "6a35590aabebb52a",
+        "command": "uptime",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "CPU",
+        "x": 150,
+        "y": 180,
+        "wires": [
+            [
+                "79e998f0afe80a35",
+                "ec51c019b02bfe31",
+                "a34102ea4e9ef3f8"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "26e23bc6459e9741",
+        "type": "ui-gauge",
+        "z": "6a35590aabebb52a",
+        "name": "CPU Capacity utilization",
+        "group": "af95162fe0b27f1b",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": "0",
+        "height": "0",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "CPU Auslastung",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#31bf42",
+                "text": "",
+                "textType": "value"
+            },
+            {
+                "from": "80",
+                "color": "#ff2e2e",
+                "text": "",
+                "textType": "value"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 610,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "79e998f0afe80a35",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "CPU Capacity utilization",
+        "func": "let uptimeOutput = msg.payload.toString();\n// Wir suchen die Zahl direkt nach \"load average:\"\nlet match = uptimeOutput.match(/load average: ([\\d.]+)/);\n\nif (match) {\n    let load = parseFloat(match[1]);\n    \n    // Umrechnung auf Prozent: \n    // Load 8.0 = 100% bei 8 Kernen.\n    let prozent = (load / 8) * 100;\n    \n    // Wir runden auf 1 Nachkommastelle\n    msg.payload = Number(prozent.toFixed(1));\n    \n    // Optional: Ein Topic setzen, damit der Chart weiß, was was ist\n    msg.topic = \"CPU-Last\";\n    \n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 180,
+        "wires": [
+            [
+                "26e23bc6459e9741",
+                "05ce1d467c12cbdc",
+                "20d91bf9af264572"
+            ]
+        ]
+    },
+    {
+        "id": "05ce1d467c12cbdc",
+        "type": "debug",
+        "z": "6a35590aabebb52a",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "ec51c019b02bfe31",
+        "type": "debug",
+        "z": "6a35590aabebb52a",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 300,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "99984fba26f1963e",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "CPU Temperature",
+        "func": "try {\n    let data = JSON.parse(msg.payload);\n    \n    // Wir erstellen zwei Nachrichtenobjekte\n    let msgTemp = { payload: Number(data.temperature.toFixed(1)) };\n    let msgBat  = { payload: data.percentage };\n    \n    // Wir geben beide Nachrichten an unterschiedlichen Ausgängen aus\n    return [msgTemp, msgBat];\n} catch (e) {\n    node.error(\"JSON Fehler: \" + e.message);\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 440,
+        "wires": [
+            [
+                "97d0af2419fc97fe",
+                "474bcaae6a8a5152",
+                "99f967f7b4c58635"
+            ]
+        ]
+    },
+    {
+        "id": "97d0af2419fc97fe",
+        "type": "ui-gauge",
+        "z": "6a35590aabebb52a",
+        "name": "CPU-Temperature",
+        "group": "af95162fe0b27f1b",
+        "order": 2,
+        "value": "payload",
+        "valueType": "msg",
+        "width": "0",
+        "height": "0",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "CPU Temperatur",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "°C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#31bf42",
+                "text": "",
+                "textType": "value"
+            },
+            {
+                "from": "40",
+                "color": "#ff2e2e",
+                "text": "",
+                "textType": "value"
+            }
+        ],
+        "min": 0,
+        "max": "60",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 570,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ac95fec5eb1fc9f0",
+        "type": "exec",
+        "z": "6a35590aabebb52a",
+        "command": "termux-battery-status",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Battery",
+        "x": 160,
+        "y": 440,
+        "wires": [
+            [
+                "99984fba26f1963e",
+                "3e7a69c8b5faad8f",
+                "e9959ca7245bc73b"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "e6a7799801e90a6b",
+        "type": "inject",
+        "z": "6a35590aabebb52a",
+        "name": "call 5s",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 80,
+        "wires": [
+            [
+                "1d73b2c561a206b4"
+            ]
+        ]
+    },
+    {
+        "id": "3e7a69c8b5faad8f",
+        "type": "debug",
+        "z": "6a35590aabebb52a",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "474bcaae6a8a5152",
+        "type": "debug",
+        "z": "6a35590aabebb52a",
+        "name": "debug 5",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "e9959ca7245bc73b",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "Battery Details",
+        "func": "let data = JSON.parse(msg.payload);\n\n// Strom in mA umrechnen\nlet currentMA = (data.current / 1000).toFixed(0);\n\n// Wir bauen direkt die Liste für die Tabelle\nmsg.payload = [\n    { Eigenschaft: \"Status\", Wert: data.status },\n    { Eigenschaft: \"Quelle\", Wert: data.plugged },\n    { Eigenschaft: \"Akku-Stand\", Wert: data.percentage + \"%\" },\n    { Eigenschaft: \"Stromfluss\", Wert: currentMA + \" mA\" },\n    { Eigenschaft: \"Spannung\", Wert: (data.voltage / 1000).toFixed(2) + \" V\" },\n    { Eigenschaft: \"Zyklen\", Wert: data.cycle },\n    { Eigenschaft: \"Gesundheit\", Wert: data.health }\n];\n\nmsg.percentage = data.percentage;\nmsg.plugged = data.plugged;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 560,
+        "wires": [
+            [
+                "e066371748a9732d",
+                "ccce55afa82e2a31",
+                "c20cfea6f8f9288f"
+            ]
+        ]
+    },
+    {
+        "id": "5482989aa85846ac",
+        "type": "ui-table",
+        "z": "6a35590aabebb52a",
+        "group": "af95162fe0b27f1b",
+        "name": "CPU-Data",
+        "label": "",
+        "order": 3,
+        "width": "0",
+        "height": 0,
+        "maxrows": 0,
+        "passthru": false,
+        "autocols": true,
+        "showSearch": false,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 450,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a34102ea4e9ef3f8",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "Table",
+        "func": "let uptimeRaw = msg.payload.toString();\n// Wir holen uns die \"Online seit\"-Zeit\nlet timeMatch = uptimeRaw.match(/up\\s+(.*?),\\s+load/);\nlet onlineSeit = timeMatch ? timeMatch[1] : \"unbekannt\";\n\n// Wir bauen das Array für die Tabelle\nmsg.payload = [\n    { Eigenschaft: \"Online seit\", Wert: onlineSeit },\n    { Eigenschaft: \"Status\", Wert: \"Aktiv\" },\n    { Eigenschaft: \"Letzter Check\", Wert: new Date().toLocaleTimeString() }\n];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 260,
+        "wires": [
+            [
+                "5482989aa85846ac",
+                "7b399e48e2a19805"
+            ]
+        ]
+    },
+    {
+        "id": "e066371748a9732d",
+        "type": "ui-table",
+        "z": "6a35590aabebb52a",
+        "group": "fe37ee40fdfcb2be",
+        "name": "Battery-Data",
+        "label": "",
+        "order": 2,
+        "width": "0",
+        "height": 0,
+        "maxrows": 0,
+        "passthru": false,
+        "autocols": true,
+        "showSearch": false,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 550,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4e00e7ab98b2dd06",
+        "type": "exec",
+        "z": "6a35590aabebb52a",
+        "command": "df -h /data | tail -1 | awk '{print $3 \" \" $4}' | sed 's/G//g'",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Disk",
+        "x": 150,
+        "y": 1380,
+        "wires": [
+            [
+                "373750b9e720a47a",
+                "a8bcc9e8fdad32a0"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "373750b9e720a47a",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "Disk Information",
+        "func": "let parts = msg.payload.trim().split(\" \");\nlet used = parseFloat(parts[0]); // Erste Zahl: Belegt\nlet free = parseFloat(parts[1]); // Zweite Zahl: Frei\n\n// Nachricht für Ausgang 1 (Progressbar)\nlet msgBar = { payload: used };\n\n// Nachricht für Ausgang 2 (Tabelle)\nlet msgTable = {\n    payload: [\n        { Eigenschaft: \"Insgesamt\", Wert: used + free + \" GB\"},\n        { Eigenschaft: \"Belegt\", Wert: used + \" GB\" },\n        { Eigenschaft: \"Frei\", Wert: free + \" GB\" }\n    ]\n};\n\nreturn [msgBar, msgTable];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1380,
+        "wires": [
+            [
+                "eda1e0ce115ba07d"
+            ],
+            [
+                "593a601379591d04",
+                "cbc97fa3ba7d6fe1"
+            ]
+        ]
+    },
+    {
+        "id": "593a601379591d04",
+        "type": "ui-table",
+        "z": "6a35590aabebb52a",
+        "group": "fdc155d89f7934b5",
+        "name": "Disk Infos",
+        "label": "Disk Infos",
+        "order": 2,
+        "width": "0",
+        "height": 0,
+        "maxrows": 0,
+        "passthru": false,
+        "autocols": true,
+        "showSearch": false,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 500,
+        "y": 1400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eda1e0ce115ba07d",
+        "type": "ui-gauge",
+        "z": "6a35590aabebb52a",
+        "name": "Disk Space Bar",
+        "group": "fdc155d89f7934b5",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": "0",
+        "height": "0",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Speicherbelegung",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "GB",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#0000ff",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "128",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 520,
+        "y": 1360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1546859748ef8dd5",
+        "type": "exec",
+        "z": "6a35590aabebb52a",
+        "command": "free -m",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "RAM",
+        "x": 150,
+        "y": 760,
+        "wires": [
+            [
+                "d81e6163f3d37536",
+                "a40c847c1f81e749"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "38012784d405ebf3",
+        "type": "ui-table",
+        "z": "6a35590aabebb52a",
+        "group": "337f45ba58998b49",
+        "name": "RAM Infos",
+        "label": "Disk Infos",
+        "order": 2,
+        "width": "0",
+        "height": 0,
+        "maxrows": 0,
+        "passthru": false,
+        "autocols": true,
+        "showSearch": false,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 550,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "13afa3329f295c74",
+        "type": "ui-gauge",
+        "z": "6a35590aabebb52a",
+        "name": "RAM Space Bar",
+        "group": "337f45ba58998b49",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": "0",
+        "height": "0",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "RAM Belegung",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "GB",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#0000ff",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "8.0",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 560,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d81e6163f3d37536",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "RAM Information",
+        "func": "let lines = msg.payload.trim().split(\"\\n\");\n// Wir suchen die Zeile, die mit \"Mem:\" beginnt\nlet memLine = lines.find(l => l.startsWith(\"Mem:\")).split(/\\s+/);\n\n// Spaltenzuordnung bei 'free -m':\n// [0] = \"Mem:\", [1] = total, [2] = used, [3] = free\nlet totalMB = parseInt(memLine[1]);\nlet usedMB = parseInt(memLine[2]);\nlet freeMB = parseInt(memLine[3]);\n\nlet totalGB = (totalMB / 1024).toFixed(1);\nlet usedGB = (usedMB / 1024).toFixed(1);\nlet freeGB = (freeMB / 1024).toFixed(1);\n\n// Ausgang 1: Die Bar (Muss eine Zahl sein)\nlet barMsg = { payload: parseFloat(usedGB) };\n\n// Ausgang 2: Die Tabelle (In deiner Wunsch-Reihenfolge)\nlet tableMsg = { \n    payload: [\n        { Eigenschaft: \"Gesamt\", Wert: totalGB + \" GB\" },\n        { Eigenschaft: \"Belegt\", Wert: usedGB + \" GB\" },\n        { Eigenschaft: \"Frei\", Wert: freeGB + \" GB\" }\n    ] \n};\n\nreturn [barMsg, tableMsg];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 760,
+        "wires": [
+            [
+                "13afa3329f295c74"
+            ],
+            [
+                "38012784d405ebf3",
+                "6212db7eeec9fa08"
+            ]
+        ]
+    },
+    {
+        "id": "a40c847c1f81e749",
+        "type": "debug",
+        "z": "6a35590aabebb52a",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 300,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "a8bcc9e8fdad32a0",
+        "type": "debug",
+        "z": "6a35590aabebb52a",
+        "name": "debug 6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 300,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "1e5e108adafbb820",
+        "type": "exec",
+        "z": "6a35590aabebb52a",
+        "command": "ifconfig | grep \"inet \" | grep -v \"127.0.0.1\" | awk '{print $2}'",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Network",
+        "x": 160,
+        "y": 960,
+        "wires": [
+            [
+                "dc8c59e32698bc8b",
+                "6cd1ec55fdcbd03e"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "dc8c59e32698bc8b",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "Network Information",
+        "func": "// Wir nehmen die erste IP aus der Liste\nlet ips = msg.payload.trim().split(\"\\n\");\nlet ipActive = ips[0] ? ips[0] : \"Nicht verbunden\";\n\nmsg.payload = [\n    { Eigenschaft: \"IP-Adresse\", Wert: ipActive },\n    { Eigenschaft: \"Netzwerk\", Wert: ips.length > 1 ? \"Mehrere aktiv\" : \"Stabil\" },\n    { Eigenschaft: \"Status\", Wert: \"Online\" }\n];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 960,
+        "wires": [
+            [
+                "49ab1db2ac85bffe",
+                "2329354c976852b8"
+            ]
+        ]
+    },
+    {
+        "id": "6cd1ec55fdcbd03e",
+        "type": "debug",
+        "z": "6a35590aabebb52a",
+        "name": "debug 7",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "49ab1db2ac85bffe",
+        "type": "ui-table",
+        "z": "6a35590aabebb52a",
+        "group": "76243c59e00076bc",
+        "name": "Network",
+        "label": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "maxrows": 0,
+        "passthru": false,
+        "autocols": true,
+        "showSearch": false,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 560,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ccce55afa82e2a31",
+        "type": "ui-gauge",
+        "z": "6a35590aabebb52a",
+        "name": "Battery Tank",
+        "group": "fe37ee40fdfcb2be",
+        "order": 1,
+        "value": "percentage",
+        "valueType": "msg",
+        "width": "5",
+        "height": "2",
+        "gtype": "gauge-battery",
+        "gstyle": "needle",
+        "title": "Battery",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#1a841a",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 550,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "99f967f7b4c58635",
+        "type": "link out",
+        "z": "6a35590aabebb52a",
+        "name": "send CPU Temperature",
+        "mode": "link",
+        "links": [
+            "fe604aaa584de361",
+            "9b22015a164e0856",
+            "eb79bd056e82586e"
+        ],
+        "x": 495,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "cc10880720c5c78d",
+        "type": "comment",
+        "z": "6a35590aabebb52a",
+        "name": "number",
+        "info": "",
+        "x": 570,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "c20cfea6f8f9288f",
+        "type": "link out",
+        "z": "6a35590aabebb52a",
+        "name": "send Battery Data",
+        "mode": "link",
+        "links": [
+            "1c31af888723f605",
+            "3fd5dbae6a99a90a",
+            "9fe722764454c10f"
+        ],
+        "x": 495,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "774c9a8cb2a675f4",
+        "type": "comment",
+        "z": "6a35590aabebb52a",
+        "name": "msg.percentage",
+        "info": "",
+        "x": 740,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "20d91bf9af264572",
+        "type": "link out",
+        "z": "6a35590aabebb52a",
+        "name": "send CPU capacity utilization",
+        "mode": "link",
+        "links": [
+            "3ec602042dc76096",
+            "ecb3ef4f66be1938",
+            "8d94612044d93137"
+        ],
+        "x": 515,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "6164f485ea8ea28e",
+        "type": "comment",
+        "z": "6a35590aabebb52a",
+        "name": "msg.plugged",
+        "info": "",
+        "x": 590,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "c51cc92bd663b0e9",
+        "type": "comment",
+        "z": "6a35590aabebb52a",
+        "name": "number",
+        "info": "",
+        "x": 590,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "7b399e48e2a19805",
+        "type": "debug",
+        "z": "6a35590aabebb52a",
+        "name": "debug 13",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "6212db7eeec9fa08",
+        "type": "link out",
+        "z": "6a35590aabebb52a",
+        "name": "send RAM Data",
+        "mode": "link",
+        "links": [
+            "a65e7ee1fa958049",
+            "980224939f5912f3",
+            "af079cda04fa5ac6"
+        ],
+        "x": 495,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "2329354c976852b8",
+        "type": "link out",
+        "z": "6a35590aabebb52a",
+        "name": "send Network Data",
+        "mode": "link",
+        "links": [
+            "82c8f192e0144b97",
+            "a039b6ab0020ef4d"
+        ],
+        "x": 515,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "cbc97fa3ba7d6fe1",
+        "type": "link out",
+        "z": "6a35590aabebb52a",
+        "name": "send Disk Data",
+        "mode": "link",
+        "links": [
+            "22ac6d604882e4fe",
+            "3343b9a27a4f4b66",
+            "778908b4e92ba0de"
+        ],
+        "x": 455,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "15eaf39e5469a945",
+        "type": "exec",
+        "z": "6a35590aabebb52a",
+        "command": "termux-wifi-connectioninfo | jq '.rssi'",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Wifi",
+        "x": 150,
+        "y": 1160,
+        "wires": [
+            [
+                "57f3849f8df22444",
+                "440ed423094de5b4"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "57f3849f8df22444",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "Network in Percentage",
+        "func": "let rssi = msg.payload; // z.B. -52\n\n// dBm → Prozent\nlet percent = Math.min(100, Math.max(0, 2 * (rssi + 100)));\n\nmsg.payload = percent;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 1160,
+        "wires": [
+            [
+                "4c39da03de29e807"
+            ]
+        ]
+    },
+    {
+        "id": "440ed423094de5b4",
+        "type": "debug",
+        "z": "6a35590aabebb52a",
+        "name": "debug 16",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 300,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "4c39da03de29e807",
+        "type": "ui-gauge",
+        "z": "6a35590aabebb52a",
+        "name": "WLAN Stärke",
+        "group": "76243c59e00076bc",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": "0",
+        "height": "0",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Signalstärke",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ff0000",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "30",
+                "color": "#00ff00",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 560,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eee784791c800539",
+        "type": "debug",
+        "z": "6a35590aabebb52a",
+        "name": "debug 21",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "0f7bf6e2175682d7",
+        "type": "ui-chart",
+        "z": "6a35590aabebb52a",
+        "group": "af95162fe0b27f1b",
+        "name": "Temperatur",
+        "label": "Temperatur",
+        "order": 5,
+        "chartType": "line",
+        "category": "",
+        "categoryType": "none",
+        "xAxisLabel": "",
+        "xAxisProperty": "payload.x",
+        "xAxisPropertyType": "msg",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "°C",
+        "yAxisProperty": "payload.y",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "60",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": "30",
+        "removeOlderUnit": "86400",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#ff0000"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#ff0000"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 490,
+        "y": 1620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e40a13ecd64aef82",
+        "type": "split",
+        "z": "6a35590aabebb52a",
+        "name": "",
+        "splt": "",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 150,
+        "y": 1620,
+        "wires": [
+            [
+                "e7a2810bb9366a2f"
+            ]
+        ]
+    },
+    {
+        "id": "e7a2810bb9366a2f",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "Formatierung",
+        "func": "// Zeitstempel in echtes Datum umwandeln\nlet date = new Date(msg.payload.zeitpunkt);\n\n// Das neue msg.payload für das Chart-Widget\nmsg.payload = {\n    x: date.getTime(),   // X-Achse: Die Zeit in Millisekunden\n    y: msg.payload.cpu_temp // Y-Achse: Die Temperatur (19.2)\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 1620,
+        "wires": [
+            [
+                "eee784791c800539",
+                "0f7bf6e2175682d7"
+            ]
+        ]
+    },
+    {
+        "id": "3f14a6e7102efbcb",
+        "type": "debug",
+        "z": "6a35590aabebb52a",
+        "name": "debug 22",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 1740,
+        "wires": []
+    },
+    {
+        "id": "f1e6b708bd3211e8",
+        "type": "ui-chart",
+        "z": "6a35590aabebb52a",
+        "group": "af95162fe0b27f1b",
+        "name": "Auslastung",
+        "label": "Auslastung",
+        "order": 4,
+        "chartType": "line",
+        "category": "",
+        "categoryType": "none",
+        "xAxisLabel": "",
+        "xAxisProperty": "payload.x",
+        "xAxisPropertyType": "msg",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "%",
+        "yAxisProperty": "payload.y",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "100",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": "30",
+        "removeOlderUnit": "86400",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#ff0000"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#ff0000"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 490,
+        "y": 1700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aa384782ca36d6b1",
+        "type": "split",
+        "z": "6a35590aabebb52a",
+        "name": "",
+        "splt": "",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 150,
+        "y": 1700,
+        "wires": [
+            [
+                "ec266f1de84ce4d1"
+            ]
+        ]
+    },
+    {
+        "id": "ec266f1de84ce4d1",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "Formatierung",
+        "func": "// Zeitstempel in echtes Datum umwandeln\nlet date = new Date(msg.payload.zeitpunkt);\n\n// Das neue msg.payload für das Chart-Widget\nmsg.payload = {\n    x: date.getTime(),   // X-Achse: Die Zeit in Millisekunden\n    y: msg.payload.cpu_last // Y-Achse: Die Temperatur (19.2)\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 1700,
+        "wires": [
+            [
+                "3f14a6e7102efbcb",
+                "f1e6b708bd3211e8"
+            ]
+        ]
+    },
+    {
+        "id": "385b5f719bd60b3d",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get reset",
+        "links": [
+            "415c8d11c46d1163"
+        ],
+        "x": 365,
+        "y": 1660,
+        "wires": [
+            [
+                "0f7bf6e2175682d7",
+                "f1e6b708bd3211e8"
+            ]
+        ]
+    },
+    {
+        "id": "35cc16e3a0418ff7",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get CPU Temp (DB)",
+        "links": [
+            "6953e6da8cc4e2ca"
+        ],
+        "x": 45,
+        "y": 1620,
+        "wires": [
+            [
+                "e40a13ecd64aef82"
+            ]
+        ]
+    },
+    {
+        "id": "70fe3fc16f824d0d",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get CPU Last (DB)",
+        "links": [
+            "c02cf06c60177b96"
+        ],
+        "x": 45,
+        "y": 1700,
+        "wires": [
+            [
+                "aa384782ca36d6b1"
+            ]
+        ]
+    },
+    {
+        "id": "dbc1bf9495bd4a6b",
+        "type": "comment",
+        "z": "6a35590aabebb52a",
+        "name": "Ausgabe CPU Temperatur und Auslastung (Historie)",
+        "info": "",
+        "x": 210,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "f90070bad0e16658",
+        "type": "comment",
+        "z": "6a35590aabebb52a",
+        "name": "Send every 5s",
+        "info": "",
+        "x": 90,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "027c803b4b0a084a",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get call 5s",
+        "links": [
+            "1d73b2c561a206b4"
+        ],
+        "x": 45,
+        "y": 180,
+        "wires": [
+            [
+                "d491260d1ef8d4b3"
+            ]
+        ]
+    },
+    {
+        "id": "1d73b2c561a206b4",
+        "type": "link out",
+        "z": "6a35590aabebb52a",
+        "name": "send call 5s",
+        "mode": "link",
+        "links": [
+            "027c803b4b0a084a",
+            "23a7b007e53df0c5",
+            "b504f3de1b7f2c88",
+            "1ecff347deafc4d7",
+            "c0fdbdf31af4192b",
+            "4849e6259d0a085f"
+        ],
+        "x": 215,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "99f6f21239c6d207",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "global update",
+        "links": [
+            "f12178a6f1afd501"
+        ],
+        "x": 45,
+        "y": 220,
+        "wires": [
+            [
+                "d491260d1ef8d4b3"
+            ]
+        ]
+    },
+    {
+        "id": "df75429abd96360c",
+        "type": "comment",
+        "z": "6a35590aabebb52a",
+        "name": "CPU Auslastung",
+        "info": "",
+        "x": 100,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "dc329114b535729a",
+        "type": "comment",
+        "z": "6a35590aabebb52a",
+        "name": "Batterie",
+        "info": "",
+        "x": 70,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "23a7b007e53df0c5",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get call 5s",
+        "links": [
+            "1d73b2c561a206b4"
+        ],
+        "x": 45,
+        "y": 440,
+        "wires": [
+            [
+                "ac95fec5eb1fc9f0"
+            ]
+        ]
+    },
+    {
+        "id": "ddeb5d33e45325d1",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "global update",
+        "links": [
+            "f12178a6f1afd501"
+        ],
+        "x": 45,
+        "y": 480,
+        "wires": [
+            [
+                "ac95fec5eb1fc9f0"
+            ]
+        ]
+    },
+    {
+        "id": "338504eb37801507",
+        "type": "comment",
+        "z": "6a35590aabebb52a",
+        "name": "RAM",
+        "info": "",
+        "x": 70,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "b504f3de1b7f2c88",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get call 5s",
+        "links": [
+            "1d73b2c561a206b4"
+        ],
+        "x": 45,
+        "y": 760,
+        "wires": [
+            [
+                "1546859748ef8dd5"
+            ]
+        ]
+    },
+    {
+        "id": "25abb80c2e014bc4",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "global update",
+        "links": [
+            "f12178a6f1afd501"
+        ],
+        "x": 45,
+        "y": 800,
+        "wires": [
+            [
+                "1546859748ef8dd5"
+            ]
+        ]
+    },
+    {
+        "id": "70c6d062dde7afeb",
+        "type": "comment",
+        "z": "6a35590aabebb52a",
+        "name": "Network",
+        "info": "",
+        "x": 80,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "1ecff347deafc4d7",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get call 5s",
+        "links": [
+            "1d73b2c561a206b4"
+        ],
+        "x": 45,
+        "y": 960,
+        "wires": [
+            [
+                "1e5e108adafbb820"
+            ]
+        ]
+    },
+    {
+        "id": "fbd9e69ac2e3a596",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "global update",
+        "links": [
+            "f12178a6f1afd501"
+        ],
+        "x": 45,
+        "y": 1000,
+        "wires": [
+            [
+                "1e5e108adafbb820"
+            ]
+        ]
+    },
+    {
+        "id": "7b199cf9fcfb92da",
+        "type": "comment",
+        "z": "6a35590aabebb52a",
+        "name": "WLAN Stärke",
+        "info": "",
+        "x": 90,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "c0fdbdf31af4192b",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get call 5s",
+        "links": [
+            "1d73b2c561a206b4"
+        ],
+        "x": 45,
+        "y": 1160,
+        "wires": [
+            [
+                "15eaf39e5469a945"
+            ]
+        ]
+    },
+    {
+        "id": "3ff1aecb2a5be579",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "global update",
+        "links": [
+            "f12178a6f1afd501"
+        ],
+        "x": 45,
+        "y": 1200,
+        "wires": [
+            [
+                "15eaf39e5469a945"
+            ]
+        ]
+    },
+    {
+        "id": "ccb6c62c7b8824c6",
+        "type": "comment",
+        "z": "6a35590aabebb52a",
+        "name": "Laufwerk",
+        "info": "",
+        "x": 80,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "4849e6259d0a085f",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get call 5s",
+        "links": [
+            "1d73b2c561a206b4"
+        ],
+        "x": 45,
+        "y": 1380,
+        "wires": [
+            [
+                "4e00e7ab98b2dd06"
+            ]
+        ]
+    },
+    {
+        "id": "95d1947ea38c95e1",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "global update",
+        "links": [
+            "f12178a6f1afd501"
+        ],
+        "x": 45,
+        "y": 1420,
+        "wires": [
+            [
+                "4e00e7ab98b2dd06"
+            ]
+        ]
+    },
+    {
+        "id": "fe604aaa584de361",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get CPU Temp",
+        "links": [
+            "99f967f7b4c58635"
+        ],
+        "x": 45,
+        "y": 1920,
+        "wires": [
+            [
+                "23874ef344b9b015"
+            ]
+        ]
+    },
+    {
+        "id": "3ec602042dc76096",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get CPU capacity utilization",
+        "links": [
+            "20d91bf9af264572"
+        ],
+        "x": 45,
+        "y": 1880,
+        "wires": [
+            [
+                "5a1b4bdf81b206fc"
+            ]
+        ]
+    },
+    {
+        "id": "1c31af888723f605",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get Battery Data",
+        "links": [
+            "c20cfea6f8f9288f"
+        ],
+        "x": 45,
+        "y": 1980,
+        "wires": [
+            [
+                "543e2ef33ba2d0b6",
+                "4a2837491d599d9d"
+            ]
+        ]
+    },
+    {
+        "id": "431f85e88e9e536d",
+        "type": "link out",
+        "z": "6a35590aabebb52a",
+        "name": "send Notification",
+        "mode": "link",
+        "links": [
+            "163cb7a4fc28e356"
+        ],
+        "x": 375,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "179ed8aed0776c1a",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get Backup State",
+        "links": [
+            "f30f54fe7935f018"
+        ],
+        "x": 45,
+        "y": 2040,
+        "wires": [
+            [
+                "ab2d5258da480dad"
+            ]
+        ]
+    },
+    {
+        "id": "ab2d5258da480dad",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "Backup Event",
+        "func": "let code = msg.payload.code;\nlet last = flow.get(\"backup_state\");\n\nlet now = code === 0 ? \"Erfolgreich\" : \"Fehlgeschlagen\";\n\nlet icon = now === \"Erfolgreich\" ? \"✅\" : \"❌\";\n\nlet event = {\n        Icon: icon,\n        Quelle: \"Backup\",\n        Typ: \"Status\",\n        Zustand: now,\n        Wert: \"Code \" + code,\n        Zeit: new Date().toLocaleTimeString(),\n        Kommentar:\n            now === \"Erfolgreich\"\n                ? \"Backup erfolgreich abgeschlossen.\"\n                : \"Backup fehlgeschlagen — bitte prüfen.\"\n};\n\nmsg.payload = [event];\n\nflow.set(\"backup_state\", now);\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 2040,
+        "wires": [
+            [
+                "431f85e88e9e536d"
+            ]
+        ]
+    },
+    {
+        "id": "543e2ef33ba2d0b6",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "Battery Plug Event",
+        "func": "let source = msg.plugged;\nlet last = flow.get(\"plug_state\");\n\nlet now = source === \"UNPLUGGED\" ? \"unplugged\" : \"plugged\";\n\nif (now !== last) {\n\n    let icon = now === \"unplugged\" ? \"🔋\" : \"🔌\";\n\n    let event = {\n        Icon: icon,\n        Quelle: \"Batterie\",\n        Typ: \"Ladekabel\",\n        Zustand: now === \"unplugged\" ? \"Warnung\" : \"Normal\",\n        Wert: source,\n        Zeit: new Date().toLocaleTimeString(),\n        Kommentar:\n            now === \"unplugged\"\n                ? \"Server läuft im Akkubetrieb — Stromversorgung prüfen.\"\n                : \"Server läuft im Netzbetrieb.\"\n    };\n\n    msg.payload = [event];\n\n} else return null;\n\nflow.set(\"plug_state\", now);\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 190,
+        "y": 1960,
+        "wires": [
+            [
+                "431f85e88e9e536d"
+            ]
+        ]
+    },
+    {
+        "id": "4a2837491d599d9d",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "Battery Level Event",
+        "func": "let level = msg.percentage;\nlet last = flow.get(\"battery_level_state\");\n\nlet now = \"Normal\";\nif (level <= 10) now = \"Kritisch\";\nelse if (level <= 25) now = \"Warnung\";\n\nif (now !== last) {\n\n    let icon = now === \"Kritisch\" ? \"🔥\" :\n               now === \"Warnung\" ? \"⚠️\" : \"🔋\";\n\n    let event = {\n        Icon: icon,\n        Quelle: \"Batterie\",\n        Typ: \"Level\",\n        Zustand: now,\n        Wert: level + \"%\",\n        Zeit: new Date().toLocaleTimeString(),\n        Kommentar:\n            now === \"Kritisch\"\n                ? \"Akkustand kritisch — Server könnte sich abschalten!\"\n                : now === \"Warnung\"\n                    ? \"Akkustand niedrig — bitte bald aufladen.\"\n                    : \"Akkustand normal.\"\n    };\n\n    msg.payload = [event];\n\n} else return null;\n\nflow.set(\"battery_level_state\", now);\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 190,
+        "y": 2000,
+        "wires": [
+            [
+                "431f85e88e9e536d"
+            ]
+        ]
+    },
+    {
+        "id": "23874ef344b9b015",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "CPU Temperatur Event",
+        "func": "let temp = msg.payload;\nlet last = flow.get(\"cpu_temp_state\");\n\nlet now = \"Normal\";\nif (temp >= 55) now = \"Kritisch\";\nelse if (temp >= 45) now = \"Warnung\";\n\nif (now !== last) {\n\n    let icon = now === \"Kritisch\" ? \"🔥\" :\n               now === \"Warnung\" ? \"⚠️\" : \"❄️\";\n\n    let event = {\n        Icon: icon,\n        Quelle: \"CPU\",\n        Typ: \"Temperatur\",\n        Zustand: now,\n        Wert: temp + \" °C\",\n        Zeit: new Date().toLocaleTimeString(),\n        Kommentar:\n            now === \"Kritisch\"\n                ? \"CPU überhitzt! Leistung könnte gedrosselt werden.\"\n                : now === \"Warnung\"\n                    ? \"CPU‑Temperatur erhöht — beobachten empfohlen.\"\n                    : \"CPU‑Temperatur im sicheren Bereich.\"\n    };\n\n    msg.payload = [event];\n\n} else return null;\n\nflow.set(\"cpu_temp_state\", now);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 1920,
+        "wires": [
+            [
+                "431f85e88e9e536d"
+            ]
+        ]
+    },
+    {
+        "id": "5a1b4bdf81b206fc",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "CPU Auslastung Event",
+        "func": "let usage = msg.payload;\nlet last = flow.get(\"cpu_usage_state\");\n\nlet now = \"Normal\";\nif (usage >= 95) now = \"Kritisch\";\nelse if (usage >= 80) now = \"Warnung\";\n\nif (now !== last) {\n\n    let icon = now === \"Kritisch\" ? \"🔥\" :\n               now === \"Warnung\" ? \"⚠️\" : \"🟢\";\n\n    let event = {\n        Icon: icon,\n        Quelle: \"CPU\",\n        Typ: \"Auslastung\",\n        Zustand: now,\n        Wert: usage + \" %\",\n        Zeit: new Date().toLocaleTimeString(),\n        Kommentar:\n            now === \"Kritisch\"\n                ? \"CPU stark überlastet! Server reagiert möglicherweise verzögert.\"\n                : now === \"Warnung\"\n                    ? \"CPU‑Auslastung erhöht — beobachten empfohlen.\"\n                    : \"CPU‑Auslastung normal.\"\n    };\n\n    msg.payload = [event];\n\n} else return null;\n\nflow.set(\"cpu_usage_state\", now);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 1880,
+        "wires": [
+            [
+                "431f85e88e9e536d"
+            ]
+        ]
+    },
+    {
+        "id": "0deda4dc6c621ac3",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "RAM Event",
+        "func": "// Tabelle auslesen\nlet totalGB = parseFloat(msg.payload[0].Wert);\nlet usedGB  = parseFloat(msg.payload[1].Wert);\nlet freeGB  = parseFloat(msg.payload[2].Wert);\n\n// Prozent berechnen\nlet percent = Math.round((usedGB / totalGB) * 100);\n\n// Letzten Zustand holen\nlet last = flow.get(\"ram_state\");\n\n// Zustand bestimmen\nlet now = \"Normal\";\nif (percent >= 90) now = \"Kritisch\";\nelse if (percent >= 75) now = \"Warnung\";\n\n// Nur Event senden, wenn Zustand sich geändert hat\nif (now !== last) {\n\n    let icon =\n        now === \"Kritisch\" ? \"🔥\" :\n        now === \"Warnung\"  ? \"⚠️\" :\n                             \"🧠\";\n\n    let event = {\n        Icon: icon,\n        Quelle: \"RAM\",\n        Typ: \"Auslastung\",\n        Zustand: now,\n        Wert: `${percent}% (${usedGB} GB von ${totalGB} GB)`,\n        Zeit: new Date().toLocaleTimeString(),\n        Kommentar:\n            now === \"Kritisch\"\n                ? \"RAM stark ausgelastet — System könnte hängen!\"\n                : now === \"Warnung\"\n                    ? \"RAM-Auslastung erhöht — beobachten empfohlen.\"\n                    : \"RAM-Auslastung normal.\"\n    };\n\n    msg.payload = [event];\n\n} else return null;\n\n// Zustand speichern\nflow.set(\"ram_state\", now);\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 170,
+        "y": 2080,
+        "wires": [
+            [
+                "431f85e88e9e536d"
+            ]
+        ]
+    },
+    {
+        "id": "a65e7ee1fa958049",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get RAM Data",
+        "links": [
+            "6212db7eeec9fa08"
+        ],
+        "x": 45,
+        "y": 2080,
+        "wires": [
+            [
+                "0deda4dc6c621ac3"
+            ]
+        ]
+    },
+    {
+        "id": "7c28fc4ee2d350c0",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "Network Event",
+        "func": "// Daten aus der Tabelle holen\nlet ip      = msg.payload[0].Wert;\nlet network = msg.payload[1].Wert;\nlet status  = msg.payload[2].Wert;\n\n// Letzten Zustand holen\nlet last = flow.get(\"network_state\");\n\n// Zustand bestimmen\nlet now = \"Normal\";\n\nif (ip === \"Nicht verbunden\") {\n    now = \"Kritisch\";\n} else if (network === \"Mehrere aktiv\") {\n    now = \"Warnung\";\n}\n\n// Nur Event senden, wenn Zustand sich geändert hat\nif (now !== last) {\n\n    let icon =\n        now === \"Kritisch\" ? \"❌\" :\n        now === \"Warnung\"  ? \"⚠️\" :\n                             \"📶\";\n\n    let kommentar =\n        now === \"Kritisch\"\n            ? \"Keine Netzwerkverbindung — Server ist offline!\"\n            : now === \"Warnung\"\n                ? \"Mehrere Netzwerke aktiv — mögliche Instabilität.\"\n                : \"Netzwerkverbindung stabil.\";\n\n    let event = {\n        Icon: icon,\n        Quelle: \"Netzwerk\",\n        Typ: \"Verbindung\",\n        Zustand: now,\n        Wert: `${ip} (${network})`,\n        Zeit: new Date().toLocaleTimeString(),\n        Kommentar: kommentar\n    };\n\n    msg.payload = [event];\n\n} else return null;\n\n// Zustand speichern\nflow.set(\"network_state\", now);\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 2120,
+        "wires": [
+            [
+                "431f85e88e9e536d"
+            ]
+        ]
+    },
+    {
+        "id": "82c8f192e0144b97",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get Network Data",
+        "links": [
+            "2329354c976852b8"
+        ],
+        "x": 45,
+        "y": 2120,
+        "wires": [
+            [
+                "7c28fc4ee2d350c0"
+            ]
+        ]
+    },
+    {
+        "id": "5c19f9e2070cf77d",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "Disk Event",
+        "func": "// Tabelle auslesen\nlet totalGB = parseFloat(msg.payload[0].Wert);\nlet usedGB  = parseFloat(msg.payload[1].Wert);\nlet freeGB  = parseFloat(msg.payload[2].Wert);\n\n// Prozent berechnen\nlet percent = Math.round((usedGB / totalGB) * 100);\n\n// Letzten Zustand holen\nlet last = flow.get(\"disk_state\");\n\n// Zustand bestimmen\nlet now = \"Normal\";\nif (percent >= 90) now = \"Kritisch\";\nelse if (percent >= 80) now = \"Warnung\";\n\n// Nur Event senden, wenn Zustand sich geändert hat\nif (now !== last) {\n\n    let icon =\n        now === \"Kritisch\" ? \"❌\" :\n        now === \"Warnung\"  ? \"⚠️\" :\n                             \"💾\";\n\n    let kommentar =\n        now === \"Kritisch\"\n            ? \"Speicher fast voll — System könnte instabil werden!\"\n            : now === \"Warnung\"\n                ? \"Speicherplatz wird knapp — bitte aufräumen.\"\n                : \"Speicherplatz ausreichend.\";\n\n    let event = {\n        Icon: icon,\n        Quelle: \"Speicher\",\n        Typ: \"Belegung\",\n        Zustand: now,\n        Wert: `${percent}% (${usedGB} GB von ${totalGB} GB)`,\n        Zeit: new Date().toLocaleTimeString(),\n        Kommentar: kommentar\n    };\n\n    msg.payload = [event];\n\n} else return null;\n\n// Zustand speichern\nflow.set(\"disk_state\", now);\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 170,
+        "y": 2160,
+        "wires": [
+            [
+                "431f85e88e9e536d"
+            ]
+        ]
+    },
+    {
+        "id": "22ac6d604882e4fe",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get Disk Data",
+        "links": [
+            "cbc97fa3ba7d6fe1"
+        ],
+        "x": 45,
+        "y": 2160,
+        "wires": [
+            [
+                "5c19f9e2070cf77d"
+            ]
+        ]
+    },
+    {
+        "id": "d431ef0fdd403064",
+        "type": "comment",
+        "z": "6a35590aabebb52a",
+        "name": "Meldungen für Notification",
+        "info": "",
+        "x": 130,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "9b22015a164e0856",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get CPU Temp",
+        "links": [
+            "99f967f7b4c58635"
+        ],
+        "x": 485,
+        "y": 1920,
+        "wires": [
+            [
+                "c25413e03bead707"
+            ]
+        ]
+    },
+    {
+        "id": "ecb3ef4f66be1938",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get CPU capacity utilization",
+        "links": [
+            "20d91bf9af264572"
+        ],
+        "x": 485,
+        "y": 1880,
+        "wires": [
+            [
+                "3e939f459f9d918d"
+            ]
+        ]
+    },
+    {
+        "id": "3fd5dbae6a99a90a",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get Battery Data",
+        "links": [
+            "c20cfea6f8f9288f"
+        ],
+        "x": 485,
+        "y": 1980,
+        "wires": [
+            [
+                "eb29413bd6ea97b5",
+                "d7628dec9ad0edcd"
+            ]
+        ]
+    },
+    {
+        "id": "d18ce6f3fcfd9736",
+        "type": "link out",
+        "z": "6a35590aabebb52a",
+        "name": "send Notification for Telebot",
+        "mode": "link",
+        "links": [
+            "6341a54442a623ab"
+        ],
+        "x": 815,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "6f3888c55d7e599a",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get Backup State",
+        "links": [
+            "f30f54fe7935f018"
+        ],
+        "x": 485,
+        "y": 2040,
+        "wires": [
+            [
+                "2961f3d3a7fd4d30"
+            ]
+        ]
+    },
+    {
+        "id": "2961f3d3a7fd4d30",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "Backup Event",
+        "func": "let code = msg.payload.code;\nlet last = flow.get(\"backup_state\");\n\nlet now = code === 0 ? \"Erfolgreich\" : \"Fehlgeschlagen\";\n\nlet icon = now === \"Erfolgreich\" ? \"✅\" : \"❌\";\n\nlet event = {\n        Icon: icon,\n        Quelle: \"Backup\",\n        Typ: \"Status\",\n        Zustand: now,\n        Wert: \"Code \" + code,\n        Zeit: new Date().toLocaleTimeString(),\n        Kommentar:\n            now === \"Erfolgreich\"\n                ? \"Backup erfolgreich abgeschlossen.\"\n                : \"Backup fehlgeschlagen — bitte prüfen.\"\n};\n\nmsg.payload = [event];\n\nflow.set(\"backup_state\", now);\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 2040,
+        "wires": [
+            [
+                "d18ce6f3fcfd9736"
+            ]
+        ]
+    },
+    {
+        "id": "eb29413bd6ea97b5",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "Battery Plug Event",
+        "func": "let source = msg.plugged;\nlet last = flow.get(\"plug_state\");\nlet now = source === \"UNPLUGGED\" ? \"unplugged\" : \"plugged\";\nlet icon = now === \"unplugged\" ? \"🔋\" : \"🔌\";\nlet event = {\n        Icon: icon,\n        Quelle: \"Batterie\",\n        Typ: \"Ladekabel\",\n        Zustand: now === \"unplugged\" ? \"Warnung\" : \"Normal\",\n        Wert: source,\n        Zeit: new Date().toLocaleTimeString(),\n        Kommentar:\n            now === \"unplugged\"\n                ? \"Server läuft im Akkubetrieb — Stromversorgung prüfen.\"\n                : \"Server läuft im Netzbetrieb.\"\n};\nmsg.payload = [event];\nflow.set(\"plug_state\", now);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 1960,
+        "wires": [
+            [
+                "d18ce6f3fcfd9736"
+            ]
+        ]
+    },
+    {
+        "id": "d7628dec9ad0edcd",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "Battery Level Event",
+        "func": "let level = msg.percentage;\nlet last = flow.get(\"battery_level_state\");\n\nlet now = \"Normal\";\nif (level <= 10) now = \"Kritisch\";\nelse if (level <= 25) now = \"Warnung\";\n\n\n\nlet icon = now === \"Kritisch\" ? \"🔥\" :\n               now === \"Warnung\" ? \"⚠️\" : \"🔋\";\n\nlet event = {\n        Icon: icon,\n        Quelle: \"Batterie\",\n        Typ: \"Level\",\n        Zustand: now,\n        Wert: level + \"%\",\n        Zeit: new Date().toLocaleTimeString(),\n        Kommentar:\n            now === \"Kritisch\"\n                ? \"Akkustand kritisch — Server könnte sich abschalten!\"\n                : now === \"Warnung\"\n                    ? \"Akkustand niedrig — bitte bald aufladen.\"\n                    : \"Akkustand normal.\"\n};\n\nmsg.payload = [event];\n\nflow.set(\"battery_level_state\", now);\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 2000,
+        "wires": [
+            [
+                "d18ce6f3fcfd9736"
+            ]
+        ]
+    },
+    {
+        "id": "c25413e03bead707",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "CPU Temperatur Event",
+        "func": "let temp = msg.payload;\nlet last = flow.get(\"cpu_temp_state\");\n\nlet now = \"Normal\";\nif (temp >= 55) now = \"Kritisch\";\nelse if (temp >= 45) now = \"Warnung\";\n\n\n\nlet icon = now === \"Kritisch\" ? \"🔥\" :\n               now === \"Warnung\" ? \"⚠️\" : \"❄️\";\n\nlet event = {\n        Icon: icon,\n        Quelle: \"CPU\",\n        Typ: \"Temperatur\",\n        Zustand: now,\n        Wert: temp + \" °C\",\n        Zeit: new Date().toLocaleTimeString(),\n        Kommentar:\n            now === \"Kritisch\"\n                ? \"CPU überhitzt! Leistung könnte gedrosselt werden.\"\n                : now === \"Warnung\"\n                    ? \"CPU‑Temperatur erhöht — beobachten empfohlen.\"\n                    : \"CPU‑Temperatur im sicheren Bereich.\"\n};\n\nmsg.payload = [event];\n\nflow.set(\"cpu_temp_state\", now);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 1920,
+        "wires": [
+            [
+                "d18ce6f3fcfd9736"
+            ]
+        ]
+    },
+    {
+        "id": "3e939f459f9d918d",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "CPU Auslastung Event",
+        "func": "let usage = msg.payload;\nlet last = flow.get(\"cpu_usage_state\");\n\nlet now = \"Normal\";\nif (usage >= 95) now = \"Kritisch\";\nelse if (usage >= 80) now = \"Warnung\";\n\n\n\nlet icon = now === \"Kritisch\" ? \"🔥\" :\n               now === \"Warnung\" ? \"⚠️\" : \"🟢\";\n\nlet event = {\n        Icon: icon,\n        Quelle: \"CPU\",\n        Typ: \"Auslastung\",\n        Zustand: now,\n        Wert: usage + \" %\",\n        Zeit: new Date().toLocaleTimeString(),\n        Kommentar:\n            now === \"Kritisch\"\n                ? \"CPU stark überlastet! Server reagiert möglicherweise verzögert.\"\n                : now === \"Warnung\"\n                    ? \"CPU‑Auslastung erhöht — beobachten empfohlen.\"\n                    : \"CPU‑Auslastung normal.\"\n};\n\nmsg.payload = [event];\n\nflow.set(\"cpu_usage_state\", now);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 1880,
+        "wires": [
+            [
+                "d18ce6f3fcfd9736"
+            ]
+        ]
+    },
+    {
+        "id": "1dfd0f28c1950516",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "RAM Event",
+        "func": "// Tabelle auslesen\nlet totalGB = parseFloat(msg.payload[0].Wert);\nlet usedGB  = parseFloat(msg.payload[1].Wert);\nlet freeGB  = parseFloat(msg.payload[2].Wert);\n\n// Prozent berechnen\nlet percent = Math.round((usedGB / totalGB) * 100);\n\n// Letzten Zustand holen\nlet last = flow.get(\"ram_state\");\n\n// Zustand bestimmen\nlet now = \"Normal\";\nif (percent >= 90) now = \"Kritisch\";\nelse if (percent >= 75) now = \"Warnung\";\n\n// Nur Event senden, wenn Zustand sich geändert hat\nlet icon =\n        now === \"Kritisch\" ? \"🔥\" :\n        now === \"Warnung\"  ? \"⚠️\" :\n                             \"🧠\";\n\nlet event = {\n        Icon: icon,\n        Quelle: \"RAM\",\n        Typ: \"Auslastung\",\n        Zustand: now,\n        Wert: `${percent}% (${usedGB} GB von ${totalGB} GB)`,\n        Zeit: new Date().toLocaleTimeString(),\n        Kommentar:\n            now === \"Kritisch\"\n                ? \"RAM stark ausgelastet — System könnte hängen!\"\n                : now === \"Warnung\"\n                    ? \"RAM-Auslastung erhöht — beobachten empfohlen.\"\n                    : \"RAM-Auslastung normal.\"\n};\n\nmsg.payload = [event];\n\n// Zustand speichern\nflow.set(\"ram_state\", now);\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 2080,
+        "wires": [
+            [
+                "d18ce6f3fcfd9736"
+            ]
+        ]
+    },
+    {
+        "id": "980224939f5912f3",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get RAM Data",
+        "links": [
+            "6212db7eeec9fa08"
+        ],
+        "x": 485,
+        "y": 2080,
+        "wires": [
+            [
+                "1dfd0f28c1950516"
+            ]
+        ]
+    },
+    {
+        "id": "661d9d03e9042150",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "Network Event",
+        "func": "// Daten aus der Tabelle holen\nlet ip      = msg.payload[0].Wert;\nlet network = msg.payload[1].Wert;\nlet status  = msg.payload[2].Wert;\n\n// Letzten Zustand holen\nlet last = flow.get(\"network_state\");\n\n// Zustand bestimmen\nlet now = \"Normal\";\n\nif (ip === \"Nicht verbunden\") {\n    now = \"Kritisch\";\n} else if (network === \"Mehrere aktiv\") {\n    now = \"Warnung\";\n}\n\n// Nur Event senden, wenn Zustand sich geändert hat\nlet icon =\n        now === \"Kritisch\" ? \"❌\" :\n        now === \"Warnung\"  ? \"⚠️\" :\n                             \"📶\";\n\nlet kommentar =\n        now === \"Kritisch\"\n            ? \"Keine Netzwerkverbindung — Server ist offline!\"\n            : now === \"Warnung\"\n                ? \"Mehrere Netzwerke aktiv — mögliche Instabilität.\"\n                : \"Netzwerkverbindung stabil.\";\n\nlet event = {\n        Icon: icon,\n        Quelle: \"Netzwerk\",\n        Typ: \"Verbindung\",\n        Zustand: now,\n        Wert: `${ip} (${network})`,\n        Zeit: new Date().toLocaleTimeString(),\n        Kommentar: kommentar\n};\n\nmsg.payload = [event];\n\n// Zustand speichern\nflow.set(\"network_state\", now);\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 2120,
+        "wires": [
+            [
+                "d18ce6f3fcfd9736"
+            ]
+        ]
+    },
+    {
+        "id": "a039b6ab0020ef4d",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get Network Data",
+        "links": [
+            "2329354c976852b8"
+        ],
+        "x": 485,
+        "y": 2120,
+        "wires": [
+            [
+                "661d9d03e9042150"
+            ]
+        ]
+    },
+    {
+        "id": "e2bdb494443b9f3e",
+        "type": "function",
+        "z": "6a35590aabebb52a",
+        "name": "Disk Event",
+        "func": "// Tabelle auslesen\nlet totalGB = parseFloat(msg.payload[0].Wert);\nlet usedGB  = parseFloat(msg.payload[1].Wert);\nlet freeGB  = parseFloat(msg.payload[2].Wert);\n\n// Prozent berechnen\nlet percent = Math.round((usedGB / totalGB) * 100);\n\n// Letzten Zustand holen\nlet last = flow.get(\"disk_state\");\n\n// Zustand bestimmen\nlet now = \"Normal\";\nif (percent >= 90) now = \"Kritisch\";\nelse if (percent >= 80) now = \"Warnung\";\n\n// Nur Event senden, wenn Zustand sich geändert hat\nlet icon =\n        now === \"Kritisch\" ? \"❌\" :\n        now === \"Warnung\"  ? \"⚠️\" :\n                             \"💾\";\n\nlet kommentar =\n        now === \"Kritisch\"\n            ? \"Speicher fast voll — System könnte instabil werden!\"\n            : now === \"Warnung\"\n                ? \"Speicherplatz wird knapp — bitte aufräumen.\"\n                : \"Speicherplatz ausreichend.\";\n\nlet event = {\n        Icon: icon,\n        Quelle: \"Speicher\",\n        Typ: \"Belegung\",\n        Zustand: now,\n        Wert: `${percent}% (${usedGB} GB von ${totalGB} GB)`,\n        Zeit: new Date().toLocaleTimeString(),\n        Kommentar: kommentar\n    };\n\nmsg.payload = [event];\n\n// Zustand speichern\nflow.set(\"disk_state\", now);\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 2160,
+        "wires": [
+            [
+                "d18ce6f3fcfd9736"
+            ]
+        ]
+    },
+    {
+        "id": "3343b9a27a4f4b66",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get Disk Data",
+        "links": [
+            "cbc97fa3ba7d6fe1"
+        ],
+        "x": 485,
+        "y": 2160,
+        "wires": [
+            [
+                "e2bdb494443b9f3e"
+            ]
+        ]
+    },
+    {
+        "id": "f256ad079ef382bb",
+        "type": "comment",
+        "z": "6a35590aabebb52a",
+        "name": "Meldungen für Telebot",
+        "info": "",
+        "x": 580,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "eb79bd056e82586e",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get CPU Temp",
+        "links": [
+            "99f967f7b4c58635"
+        ],
+        "x": 665,
+        "y": 1580,
+        "wires": [
+            [
+                "82f07c0bd853cf27"
+            ]
+        ]
+    },
+    {
+        "id": "82f07c0bd853cf27",
+        "type": "change",
+        "z": "6a35590aabebb52a",
+        "name": "cpu temp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cpu_temp",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 1580,
+        "wires": [
+            [
+                "16cbaf2e43b86536"
+            ]
+        ]
+    },
+    {
+        "id": "0cc987eedadff597",
+        "type": "change",
+        "z": "6a35590aabebb52a",
+        "name": "cpu last",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cpu_last",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 1620,
+        "wires": [
+            [
+                "16cbaf2e43b86536"
+            ]
+        ]
+    },
+    {
+        "id": "8d94612044d93137",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get CPU Last",
+        "links": [
+            "20d91bf9af264572"
+        ],
+        "x": 665,
+        "y": 1620,
+        "wires": [
+            [
+                "0cc987eedadff597"
+            ]
+        ]
+    },
+    {
+        "id": "9fe722764454c10f",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get Battery Data",
+        "links": [
+            "c20cfea6f8f9288f"
+        ],
+        "x": 665,
+        "y": 1660,
+        "wires": [
+            [
+                "cc0468e70defae7e",
+                "a5e9f3b60f886b7b"
+            ]
+        ]
+    },
+    {
+        "id": "cc0468e70defae7e",
+        "type": "change",
+        "z": "6a35590aabebb52a",
+        "name": "batt lvl",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "percentage",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "batt_lvl",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 1660,
+        "wires": [
+            [
+                "16cbaf2e43b86536"
+            ]
+        ]
+    },
+    {
+        "id": "a5e9f3b60f886b7b",
+        "type": "change",
+        "z": "6a35590aabebb52a",
+        "name": "batt plug",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "plugged",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "batt_plug",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 1700,
+        "wires": [
+            [
+                "16cbaf2e43b86536"
+            ]
+        ]
+    },
+    {
+        "id": "f5baae477b754dbf",
+        "type": "change",
+        "z": "6a35590aabebb52a",
+        "name": "disk",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[1].Wert",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "disk",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 1740,
+        "wires": [
+            [
+                "16cbaf2e43b86536"
+            ]
+        ]
+    },
+    {
+        "id": "778908b4e92ba0de",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get Disk Data",
+        "links": [
+            "cbc97fa3ba7d6fe1"
+        ],
+        "x": 665,
+        "y": 1740,
+        "wires": [
+            [
+                "f5baae477b754dbf"
+            ]
+        ]
+    },
+    {
+        "id": "16cbaf2e43b86536",
+        "type": "join",
+        "z": "6a35590aabebb52a",
+        "name": "combine for DB",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": false,
+        "timeout": "",
+        "count": "6",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 970,
+        "y": 1580,
+        "wires": [
+            [
+                "18cbe6332f8a3365"
+            ]
+        ]
+    },
+    {
+        "id": "3cbcec91620a2cb0",
+        "type": "change",
+        "z": "6a35590aabebb52a",
+        "name": "ram",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[1].Wert",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "ram",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 1780,
+        "wires": [
+            [
+                "16cbaf2e43b86536"
+            ]
+        ]
+    },
+    {
+        "id": "af079cda04fa5ac6",
+        "type": "link in",
+        "z": "6a35590aabebb52a",
+        "name": "get RAM Data",
+        "links": [
+            "6212db7eeec9fa08"
+        ],
+        "x": 665,
+        "y": 1780,
+        "wires": [
+            [
+                "3cbcec91620a2cb0"
+            ]
+        ]
+    },
+    {
+        "id": "4441773736ede62d",
+        "type": "comment",
+        "z": "6a35590aabebb52a",
+        "name": "Datenaufbereitung und Bündeln",
+        "info": "",
+        "x": 770,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "18cbe6332f8a3365",
+        "type": "link out",
+        "z": "6a35590aabebb52a",
+        "name": "send Raw Data",
+        "mode": "link",
+        "links": [
+            "7464ca0e6604dade",
+            "e9aeb9e3a252811b"
+        ],
+        "x": 1105,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "2637bab259e7b3e3",
+        "type": "comment",
+        "z": "6a35590aabebb52a",
+        "name": "Manuelles Backup",
+        "info": "",
+        "x": 370,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "bd795c32a04030c2",
+        "type": "ui-button",
+        "z": "6a35590aabebb52a",
+        "group": "e82080a8cee2e172",
+        "name": "Manuelles Backup",
+        "label": "Manuelles Backup",
+        "order": 1,
+        "width": "2",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-archive",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 370,
+        "y": 80,
+        "wires": [
+            [
+                "184237d775a5b08a"
+            ]
+        ]
+    },
+    {
+        "id": "184237d775a5b08a",
+        "type": "link out",
+        "z": "6a35590aabebb52a",
+        "name": "send Manual Archive",
+        "mode": "link",
+        "links": [
+            "88d8689db9ed9902"
+        ],
+        "x": 515,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "03d23cf562f968d7",
+        "type": "inject",
+        "z": "1e0ec00694890ee8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 03 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "158cb9bb7f71838a"
+            ]
+        ]
+    },
+    {
+        "id": "158cb9bb7f71838a",
+        "type": "exec",
+        "z": "1e0ec00694890ee8",
+        "command": "rclone copy /data/data/com.termux/files/home/.node-red/flows.json onedrive:Leon/Hobby/Projekte/Server/Backup/ --suffix .$(date +%Y%m%d_%H%M)",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Rclone Backup",
+        "x": 320,
+        "y": 100,
+        "wires": [
+            [],
+            [],
+            [
+                "f30f54fe7935f018",
+                "ac8aa223aac91d98"
+            ]
+        ]
+    },
+    {
+        "id": "f30f54fe7935f018",
+        "type": "link out",
+        "z": "1e0ec00694890ee8",
+        "name": "send Backup State",
+        "mode": "link",
+        "links": [
+            "179ed8aed0776c1a",
+            "6f3888c55d7e599a"
+        ],
+        "x": 455,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "ac8aa223aac91d98",
+        "type": "debug",
+        "z": "1e0ec00694890ee8",
+        "name": "debug 15",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "eb4e15f04c683c6b",
+        "type": "comment",
+        "z": "1e0ec00694890ee8",
+        "name": "Aktuelles Backup ziehen",
+        "info": "",
+        "x": 150,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "88d8689db9ed9902",
+        "type": "link in",
+        "z": "1e0ec00694890ee8",
+        "name": "get Manual Archive",
+        "links": [
+            "184237d775a5b08a"
+        ],
+        "x": 185,
+        "y": 140,
+        "wires": [
+            [
+                "158cb9bb7f71838a"
+            ]
+        ]
+    },
+    {
+        "id": "c5819643eddc03bf",
+        "type": "telegram sender",
+        "z": "d8c0a15bcbb037c5",
+        "name": "Kritische Meldungen",
+        "bot": "783599e7fae86e1e",
+        "haserroroutput": true,
+        "outputs": 2,
+        "x": 380,
+        "y": 200,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "6b0be0e957c8b22f",
+        "type": "function",
+        "z": "d8c0a15bcbb037c5",
+        "name": "Formatieren",
+        "func": "const MY_CHAT_ID = 8436516134; \n\nmsg.payload = {\n    chatId: MY_CHAT_ID,\n    type: 'message',\n    content: msg.payload \n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "c5819643eddc03bf"
+            ]
+        ]
+    },
+    {
+        "id": "a3831f3762fdf810",
+        "type": "link in",
+        "z": "d8c0a15bcbb037c5",
+        "name": "get Global Notification",
+        "links": [
+            "7f03de25dd5b3b64"
+        ],
+        "x": 45,
+        "y": 200,
+        "wires": [
+            [
+                "6b0be0e957c8b22f"
+            ]
+        ]
+    },
+    {
+        "id": "7b7d28f197111cbb",
+        "type": "comment",
+        "z": "d8c0a15bcbb037c5",
+        "name": "Kritische Meldungen",
+        "info": "",
+        "x": 130,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "201b50520836fc63",
+        "type": "comment",
+        "z": "d8c0a15bcbb037c5",
+        "name": "Commands",
+        "info": "",
+        "x": 110,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "4508d486308084fb",
+        "type": "debug",
+        "z": "d8c0a15bcbb037c5",
+        "name": "debug 19",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload[0]",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 160,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "6341a54442a623ab",
+        "type": "link in",
+        "z": "d8c0a15bcbb037c5",
+        "name": "get Notification for Telebot",
+        "links": [
+            "d18ce6f3fcfd9736"
+        ],
+        "x": 45,
+        "y": 120,
+        "wires": [
+            [
+                "4508d486308084fb",
+                "4a0809e32219d099"
+            ]
+        ]
+    },
+    {
+        "id": "d1aeb4f74fb630b7",
+        "type": "telegram sender",
+        "z": "d8c0a15bcbb037c5",
+        "name": "Send Status",
+        "bot": "783599e7fae86e1e",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1170,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5f6cd6d2addf51b2",
+        "type": "comment",
+        "z": "d8c0a15bcbb037c5",
+        "name": "send Status",
+        "info": "",
+        "x": 110,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "b8d5d5677a9accaa",
+        "type": "link out",
+        "z": "d8c0a15bcbb037c5",
+        "name": "send Telebot \"Status\"",
+        "mode": "link",
+        "links": [
+            "fc0d8484f7220194"
+        ],
+        "x": 235,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "4a0809e32219d099",
+        "type": "function",
+        "z": "d8c0a15bcbb037c5",
+        "name": "Notification Filter",
+        "func": "// Event aus dem Array holen\nlet event = msg.payload[0];\n\n// Einfacher String für ui-notification\nmsg.payload =\n    `${event.Icon} ${event.Quelle} – ${event.Typ}\\n` +\n    `${event.Zustand}: ${event.Kommentar}`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 190,
+        "y": 120,
+        "wires": [
+            [
+                "be6855cdddf96306",
+                "2a63399989a8aed1"
+            ]
+        ]
+    },
+    {
+        "id": "be6855cdddf96306",
+        "type": "debug",
+        "z": "d8c0a15bcbb037c5",
+        "name": "debug 20",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "015afe24a171b36f",
+        "type": "function",
+        "z": "d8c0a15bcbb037c5",
+        "name": "speichern und senden",
+        "func": "// Prüfen, ob eine Telegram-ähnliche Message angekommen ist\nconst isTelegramMessage =\n    msg.payload &&\n    typeof msg.payload === \"object\" &&\n    msg.payload.chatId === 8436516134 &&\n    msg.payload.type === \"message\" &&\n    msg.payload.content === \"\";\n\n// 1. Normale Sensordaten puffern (nur wenn es KEINE Telegram-Message ist)\nif (!msg.hasOwnProperty('send_status') && !isTelegramMessage) {\n    context.set('lastPayload', msg.payload);\n    node.status({fill: \"blue\", shape: \"ring\", text: \"Wert gepuffert...\"});\n    return null;\n}\n\n// 2. Telegram-Trigger kommt an → erst dann senden\nif (isTelegramMessage) {\n    let savedPayload = context.get('lastPayload');\n\n    if (savedPayload !== undefined) {\n        msg.payload = savedPayload;\n        node.status({fill: \"green\", shape: \"dot\", text: \"Wert gesendet (Telegram Trigger)\"});\n        return msg;\n    } else {\n        node.status({fill: \"red\", shape: \"dot\", text: \"Kein Wert im Speicher\"});\n        return null;\n    }\n}\n\n// 3. Falls msg.send_status weiterhin unterstützt werden soll:\nif (msg.hasOwnProperty('send_status')) {\n    let savedPayload = context.get('lastPayload');\n\n    if (savedPayload !== undefined) {\n        msg.payload = savedPayload;\n        node.status({fill: \"green\", shape: \"dot\", text: \"Wert gesendet (send_status)\"});\n        return msg;\n    } else {\n        node.status({fill: \"red\", shape: \"dot\", text: \"Kein Wert im Speicher\"});\n        return null;\n    }\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 120,
+        "wires": [
+            [
+                "90a636ab963b9cfb"
+            ]
+        ]
+    },
+    {
+        "id": "26e75dfe72c91f1b",
+        "type": "debug",
+        "z": "d8c0a15bcbb037c5",
+        "name": "debug 26",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "fc0d8484f7220194",
+        "type": "link in",
+        "z": "d8c0a15bcbb037c5",
+        "name": "get Telebot \"Status\"",
+        "links": [
+            "b8d5d5677a9accaa"
+        ],
+        "x": 485,
+        "y": 80,
+        "wires": [
+            [
+                "015afe24a171b36f"
+            ]
+        ]
+    },
+    {
+        "id": "7a129548045d370b",
+        "type": "function",
+        "z": "d8c0a15bcbb037c5",
+        "name": "Formatieren",
+        "func": "const MY_CHAT_ID = 8436516134; \n\nmsg.payload = {\n    chatId: MY_CHAT_ID,\n    type: 'message',\n    content: msg.payload \n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 120,
+        "wires": [
+            [
+                "d1aeb4f74fb630b7"
+            ]
+        ]
+    },
+    {
+        "id": "2a63399989a8aed1",
+        "type": "join",
+        "z": "d8c0a15bcbb037c5",
+        "name": "combine for DB",
+        "mode": "custom",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": false,
+        "timeout": "",
+        "count": "7",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 410,
+        "y": 120,
+        "wires": [
+            [
+                "015afe24a171b36f"
+            ]
+        ]
+    },
+    {
+        "id": "90a636ab963b9cfb",
+        "type": "split",
+        "z": "d8c0a15bcbb037c5",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": "8",
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 830,
+        "y": 120,
+        "wires": [
+            [
+                "26e75dfe72c91f1b",
+                "7a129548045d370b"
+            ]
+        ]
+    },
+    {
+        "id": "05bc3a11911eb103",
+        "type": "inject",
+        "z": "d8c0a15bcbb037c5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 18 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 400,
+        "wires": [
+            [
+                "b8d5d5677a9accaa"
+            ]
+        ]
+    },
+    {
+        "id": "160b540323b45b78",
+        "type": "telegram command",
+        "z": "d8c0a15bcbb037c5",
+        "name": "",
+        "command": "/status",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "scope": "default",
+        "bot": "783599e7fae86e1e",
+        "strict": false,
+        "hasresponse": true,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 2,
+        "x": 130,
+        "y": 440,
+        "wires": [
+            [
+                "b8d5d5677a9accaa"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "baebc5b689256348",
+        "type": "debug",
+        "z": "d8c0a15bcbb037c5",
+        "name": "debug 27",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 160,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "e9aeb9e3a252811b",
+        "type": "link in",
+        "z": "d8c0a15bcbb037c5",
+        "name": "get raw Data",
+        "links": [
+            "18cbe6332f8a3365"
+        ],
+        "x": 45,
+        "y": 320,
+        "wires": [
+            [
+                "baebc5b689256348",
+                "defd94159ab574ec"
+            ]
+        ]
+    },
+    {
+        "id": "449cd5d550554891",
+        "type": "telegram sender",
+        "z": "d8c0a15bcbb037c5",
+        "name": "Send Details",
+        "bot": "783599e7fae86e1e",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 950,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "674296ce8e97df3f",
+        "type": "debug",
+        "z": "d8c0a15bcbb037c5",
+        "name": "debug 28",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "04ff6af499bb4115",
+        "type": "function",
+        "z": "d8c0a15bcbb037c5",
+        "name": "speichern und senden",
+        "func": "// Prüfen, ob eine Telegram-ähnliche Message angekommen ist\nconst isTelegramMessage =\n    msg.payload &&\n    typeof msg.payload === \"object\" &&\n    msg.payload.chatId === 8436516134 &&\n    msg.payload.type === \"message\" &&\n    msg.payload.content === \"\";\n\n// 1. Normale Sensordaten puffern (nur wenn es KEINE Telegram-Message ist)\nif (!msg.hasOwnProperty('send_status') && !isTelegramMessage) {\n    context.set('lastPayload', msg.payload);\n    node.status({fill: \"blue\", shape: \"ring\", text: \"Wert gepuffert...\"});\n    return null;\n}\n\n// 2. Telegram-Trigger kommt an → erst dann senden\nif (isTelegramMessage) {\n    let savedPayload = context.get('lastPayload');\n\n    if (savedPayload !== undefined) {\n        msg.payload = savedPayload;\n        node.status({fill: \"green\", shape: \"dot\", text: \"Wert gesendet (Telegram Trigger)\"});\n        return msg;\n    } else {\n        node.status({fill: \"red\", shape: \"dot\", text: \"Kein Wert im Speicher\"});\n        return null;\n    }\n}\n\n// 3. Falls msg.send_status weiterhin unterstützt werden soll:\nif (msg.hasOwnProperty('send_status')) {\n    let savedPayload = context.get('lastPayload');\n\n    if (savedPayload !== undefined) {\n        msg.payload = savedPayload;\n        node.status({fill: \"green\", shape: \"dot\", text: \"Wert gesendet (send_status)\"});\n        return msg;\n    } else {\n        node.status({fill: \"red\", shape: \"dot\", text: \"Kein Wert im Speicher\"});\n        return null;\n    }\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 320,
+        "wires": [
+            [
+                "3b28d98193915120"
+            ]
+        ]
+    },
+    {
+        "id": "8154110c033d6604",
+        "type": "debug",
+        "z": "d8c0a15bcbb037c5",
+        "name": "debug 29",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "fbe5f243d61af6b7",
+        "type": "link in",
+        "z": "d8c0a15bcbb037c5",
+        "name": "get Telebot \"Details\"",
+        "links": [
+            "7bec0fed7f61424f"
+        ],
+        "x": 265,
+        "y": 280,
+        "wires": [
+            [
+                "04ff6af499bb4115"
+            ]
+        ]
+    },
+    {
+        "id": "e219135f1335d88f",
+        "type": "function",
+        "z": "d8c0a15bcbb037c5",
+        "name": "Formatieren",
+        "func": "const MY_CHAT_ID = 8436516134; \n\nmsg.payload = {\n    chatId: MY_CHAT_ID,\n    type: 'message',\n    content: msg.payload \n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 320,
+        "wires": [
+            [
+                "449cd5d550554891"
+            ]
+        ]
+    },
+    {
+        "id": "3b28d98193915120",
+        "type": "split",
+        "z": "d8c0a15bcbb037c5",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": "8",
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 610,
+        "y": 320,
+        "wires": [
+            [
+                "8154110c033d6604",
+                "e219135f1335d88f"
+            ]
+        ]
+    },
+    {
+        "id": "a4dac422599fadf7",
+        "type": "comment",
+        "z": "d8c0a15bcbb037c5",
+        "name": "send Details",
+        "info": "",
+        "x": 110,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "d1f10d5dc61edc31",
+        "type": "telegram command",
+        "z": "d8c0a15bcbb037c5",
+        "name": "",
+        "command": "/details",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "scope": "default",
+        "bot": "783599e7fae86e1e",
+        "strict": false,
+        "hasresponse": true,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 2,
+        "x": 130,
+        "y": 500,
+        "wires": [
+            [
+                "7bec0fed7f61424f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "7bec0fed7f61424f",
+        "type": "link out",
+        "z": "d8c0a15bcbb037c5",
+        "name": "send Telebot \"Details\"",
+        "mode": "link",
+        "links": [
+            "fbe5f243d61af6b7"
+        ],
+        "x": 235,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "defd94159ab574ec",
+        "type": "function",
+        "z": "d8c0a15bcbb037c5",
+        "name": "Notification Filter",
+        "func": "// Eingehende Werte\nlet ram =       msg.payload.ram;          // \"3.1 GB\"\nlet cpuLast =   msg.payload.cpu_last;     // 5.4\nlet disk =      msg.payload.disk;         // \"13 GB\"\nlet cpuTemp =   msg.payload.cpu_temp;     // 23.5\nlet battLvl =   msg.payload.batt_lvl;     // 100\nlet battPlug =  msg.payload.batt_plug;    // \"PLUGGED_AC\"\n\n// Akku-Status übersetzen\nlet battStatus = \"Unbekannt\";\n\nswitch (battPlug) {\n    case \"PLUGGED_AC\":\n        battStatus = \"Netzteil\";\n        break;\n    case \"PLUGGED_USB\":\n        battStatus = \"USB\";\n        break;\n    case \"PLUGGED_WIRELESS\":\n        battStatus = \"Wireless Charging\";\n        break;\n    case \"UNPLUGGED\":\n        battStatus = \"Entladen\";\n        break;\n}\n\n// Jetzt bauen wir den fertigen String\nmsg.payload =\n`📊 Server Details\n-------------------------\n💾 RAM: ${ram}\n🧮 CPU Last: ${cpuLast} %\n🌡️ CPU Temp: ${cpuTemp} °C\n📦 Speicher: ${disk}\n🔋 Akku: ${battLvl} % (${battStatus})`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 190,
+        "y": 320,
+        "wires": [
+            [
+                "674296ce8e97df3f",
+                "04ff6af499bb4115"
+            ]
+        ]
+    },
+    {
+        "id": "9d76b7110b4466ac",
+        "type": "function",
+        "z": "e72485e3de859577",
+        "name": "format for DB",
+        "func": "let d = msg.payload;\n\n// 1. Daten zuweisen (mit Fallbacks gegen 'undefined')\nlet cpu_temp  = d.cpu_temp  || 0;\nlet cpu_last  = d.cpu_last  || 0;\nlet batt_lvl  = d.batt_lvl  || 0;\nlet batt_plug = d.batt_plug || 'UNKNOWN';\nlet ram       = d.ram       || 'n/a';\nlet disk      = d.disk      || 'n/a';\n\n// 2. SQL-Befehl bauen - Die Reihenfolge hier MUSS die gleiche sein wie oben im CREATE TABLE\n// (id und zeitpunkt lassen wir weg, die füllt die Datenbank von selbst aus)\nmsg.topic = `INSERT INTO system_status \n    (cpu_temp, cpu_last, batt_lvl, batt_plug, ram_frei, disk_frei) \n    VALUES \n    (${cpu_temp}, ${cpu_last}, ${batt_lvl}, '${batt_plug}', '${ram}', '${disk}');`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 120,
+        "wires": [
+            [
+                "12dbf360801522ac",
+                "dcc7ffae9cb1bb6e"
+            ]
+        ]
+    },
+    {
+        "id": "12dbf360801522ac",
+        "type": "mysql",
+        "z": "e72485e3de859577",
+        "mydb": "f744b3add02065e0",
+        "name": "server_state",
+        "x": 590,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dcc7ffae9cb1bb6e",
+        "type": "debug",
+        "z": "e72485e3de859577",
+        "name": "debug 23",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "d10b52562822d9ea",
+        "type": "inject",
+        "z": "e72485e3de859577",
+        "name": "just 30 days",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 03 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 180,
+        "wires": [
+            [
+                "d81792a44ccb432d"
+            ]
+        ]
+    },
+    {
+        "id": "d81792a44ccb432d",
+        "type": "function",
+        "z": "e72485e3de859577",
+        "name": "over 30 days",
+        "func": "msg.topic = \"DELETE FROM system_status WHERE zeitpunkt < NOW() - INTERVAL 30 DAY;\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 180,
+        "wires": [
+            [
+                "12dbf360801522ac",
+                "aebc10700761f51e"
+            ]
+        ]
+    },
+    {
+        "id": "aebc10700761f51e",
+        "type": "debug",
+        "z": "e72485e3de859577",
+        "name": "debug 24",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "091d7e236ee3bfd5",
+        "type": "link in",
+        "z": "e72485e3de859577",
+        "name": "global update",
+        "links": [
+            "f12178a6f1afd501"
+        ],
+        "x": 285,
+        "y": 220,
+        "wires": [
+            [
+                "d81792a44ccb432d"
+            ]
+        ]
+    },
+    {
+        "id": "cffbb8f9487b56f0",
+        "type": "delay",
+        "z": "e72485e3de859577",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "minute",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 200,
+        "y": 120,
+        "wires": [
+            [
+                "9d76b7110b4466ac",
+                "f26298dcb1e8e9c0"
+            ]
+        ]
+    },
+    {
+        "id": "f26298dcb1e8e9c0",
+        "type": "debug",
+        "z": "e72485e3de859577",
+        "name": "debug 25",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "679e92d5107c390d",
+        "type": "comment",
+        "z": "e72485e3de859577",
+        "name": "Server-Stats",
+        "info": "",
+        "x": 90,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "276c7fc440b4823c",
+        "type": "link in",
+        "z": "e72485e3de859577",
+        "name": "global update",
+        "links": [
+            "f12178a6f1afd501"
+        ],
+        "x": 185,
+        "y": 380,
+        "wires": [
+            [
+                "f40594f2c279ac80",
+                "9974033932898226"
+            ]
+        ]
+    },
+    {
+        "id": "004a4db199949ab8",
+        "type": "inject",
+        "z": "e72485e3de859577",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 03 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 320,
+        "wires": [
+            [
+                "f40594f2c279ac80",
+                "9974033932898226"
+            ]
+        ]
+    },
+    {
+        "id": "caee41a38feb79fe",
+        "type": "mysql",
+        "z": "e72485e3de859577",
+        "mydb": "f744b3add02065e0",
+        "name": "server_state",
+        "x": 710,
+        "y": 340,
+        "wires": [
+            [
+                "6953e6da8cc4e2ca"
+            ]
+        ]
+    },
+    {
+        "id": "1a7c5cb0281449e1",
+        "type": "function",
+        "z": "e72485e3de859577",
+        "name": "Select Data",
+        "func": "// Der SQL-Befehl: Berechnet den Durchschnitt pro Stunde über 30 Tage\nmsg.topic = `\n    SELECT \n        DATE_FORMAT(zeitpunkt, '%Y-%m-%d %H:00:00') AS zeitpunkt, \n        AVG(cpu_temp) AS cpu_temp\n    FROM system_status \n    WHERE zeitpunkt >= NOW() - INTERVAL 30 DAY \n    GROUP BY DATE_FORMAT(zeitpunkt, '%Y-%m-%d %H:00:00')\n    ORDER BY zeitpunkt ASC;\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 340,
+        "wires": [
+            [
+                "caee41a38feb79fe"
+            ]
+        ]
+    },
+    {
+        "id": "c68a1f153dbac1ba",
+        "type": "ui-button",
+        "z": "e72485e3de859577",
+        "group": "af95162fe0b27f1b",
+        "name": "Aktualisieren",
+        "label": "Aktualisieren",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "mdi-refresh",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 130,
+        "y": 440,
+        "wires": [
+            [
+                "f40594f2c279ac80",
+                "9974033932898226"
+            ]
+        ]
+    },
+    {
+        "id": "a2b00bf03e11e46d",
+        "type": "mysql",
+        "z": "e72485e3de859577",
+        "mydb": "f744b3add02065e0",
+        "name": "server_state",
+        "x": 710,
+        "y": 280,
+        "wires": [
+            [
+                "c02cf06c60177b96"
+            ]
+        ]
+    },
+    {
+        "id": "8d385ca20df2b37c",
+        "type": "function",
+        "z": "e72485e3de859577",
+        "name": "Select Data",
+        "func": "// Der SQL-Befehl: Berechnet den Durchschnitt pro Stunde über 30 Tage\nmsg.topic = `\n    SELECT \n        DATE_FORMAT(zeitpunkt, '%Y-%m-%d %H:00:00') AS zeitpunkt,\n        AVG(cpu_last) AS cpu_last\n    FROM system_status \n    WHERE zeitpunkt >= NOW() - INTERVAL 30 DAY \n    GROUP BY DATE_FORMAT(zeitpunkt, '%Y-%m-%d %H:00:00')\n    ORDER BY zeitpunkt ASC;\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 280,
+        "wires": [
+            [
+                "a2b00bf03e11e46d"
+            ]
+        ]
+    },
+    {
+        "id": "415c8d11c46d1163",
+        "type": "link out",
+        "z": "e72485e3de859577",
+        "name": "send delete Command",
+        "mode": "link",
+        "links": [
+            "385b5f719bd60b3d"
+        ],
+        "x": 435,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "9974033932898226",
+        "type": "function",
+        "z": "e72485e3de859577",
+        "name": "delete table",
+        "func": "// Sendet ein leeres Array, was das Chart sofort leert\nmsg.payload = [];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 380,
+        "wires": [
+            [
+                "415c8d11c46d1163"
+            ]
+        ]
+    },
+    {
+        "id": "f40594f2c279ac80",
+        "type": "delay",
+        "z": "e72485e3de859577",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "50",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 330,
+        "y": 320,
+        "wires": [
+            [
+                "8d385ca20df2b37c",
+                "1a7c5cb0281449e1"
+            ]
+        ]
+    },
+    {
+        "id": "6953e6da8cc4e2ca",
+        "type": "link out",
+        "z": "e72485e3de859577",
+        "name": "send CPU Temp (DB)",
+        "mode": "link",
+        "links": [
+            "35cc16e3a0418ff7"
+        ],
+        "x": 835,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "c02cf06c60177b96",
+        "type": "link out",
+        "z": "e72485e3de859577",
+        "name": "send CPU Last (DB)",
+        "mode": "link",
+        "links": [
+            "70fe3fc16f824d0d"
+        ],
+        "x": 835,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "856c788739407f05",
+        "type": "comment",
+        "z": "e72485e3de859577",
+        "name": "Call letzten 30 Tage CPU Temperatur und Auslastung",
+        "info": "",
+        "x": 210,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "7464ca0e6604dade",
+        "type": "link in",
+        "z": "e72485e3de859577",
+        "name": "get Raw Data",
+        "links": [
+            "18cbe6332f8a3365"
+        ],
+        "x": 45,
+        "y": 120,
+        "wires": [
+            [
+                "cffbb8f9487b56f0"
+            ]
+        ]
+    },
+    {
+        "id": "6a45f0bffd1560f8",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "@flowfuse/node-red-dashboard": "1.30.2",
+            "node-red-dashboard": "3.6.6",
+            "node-red-node-mysql": "3.0.0",
+            "node-red-contrib-telegrambot": "17.1.2"
+        }
+    }
+]
